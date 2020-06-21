@@ -10,7 +10,7 @@ const Page: React.FC = ({ children }) =>
         <div />
         <Link to="/"><Text>Catherine Podolski</Text></Link>
         <Box>
-          <Link to="/">Acceuil</Link>
+          <Link to="/">Accueil</Link>
           <Link to="/about">Bio</Link>
           <Link to="/contact">Contact</Link>
         </Box>
