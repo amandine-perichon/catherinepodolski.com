@@ -1,6 +1,5 @@
+- find photo gallery
+- add galleries link to home
 - style header
 - add font Cardo?
 - style about page
-- find photo gallery
-- add galleries link to home
-- remove webkit outline
