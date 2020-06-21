@@ -8,8 +8,9 @@ const Page: React.FC = ({ children }) =>
     <nav className={styles.navbar}>
       <Flex alignItems="center" justifyContent="space-between">
         <div />
-        <Text>Catherine Podolski</Text>
+        <Link to="/"><Text>Catherine Podolski</Text></Link>
         <Box>
+          <Link to="/">Acceuil</Link>
           <Link to="/about">Bio</Link>
           <Link to="/contact">Contact</Link>
         </Box>
