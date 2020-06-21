@@ -15,7 +15,9 @@
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended"
     ],
-    "rules": {},
+    "rules": {
+        "react/prop-types": 0,
+    },
     "settings": {
         "react": {
             "version": "detect"
