@@ -1,6 +1,5 @@
 import { theme } from "@chakra-ui/core";
 
-console.log(theme.breakpoints)
 const customTheme = {
   ...theme,
   colors: {
@@ -11,6 +10,10 @@ const customTheme = {
       700: "#2a69ac",
     },
   },
+  fonts: {
+    ...theme.fonts,
+    body: 'Lora',
+  }
 };
 
 export default customTheme

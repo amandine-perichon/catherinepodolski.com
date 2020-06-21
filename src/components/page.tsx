@@ -8,7 +8,7 @@ const Page: React.FC = ({ children }) =>
     <nav className={styles.navbar}>
       <Flex alignItems="center" justifyContent="space-between">
         <div />
-        <Link to="/"><Text>Catherine Podolski</Text></Link>
+        <Link className={styles.link} to="/"><Text fontSize="2.5rem" fontFamily="Sacramento">Catherine Podolski</Text></Link>
         <Box>
           <Link to="/">Accueil</Link>
           <Link to="/about">Bio</Link>
