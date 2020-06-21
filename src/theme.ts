@@ -12,6 +12,7 @@ const customTheme = {
   },
   fonts: {
     ...theme.fonts,
+    heading: 'Lora',
     body: 'Lora',
   }
 };
