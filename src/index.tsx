@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { ThemeProvider, CSSReset } from "@chakra-ui/core";
+import customTheme from './theme'
 
 import HomePage from './home'
 import AboutPage from './about'
@@ -10,7 +11,7 @@ import GalleryPage from './gallery'
 
 function App() {
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={customTheme}>
       <CSSReset />
       <Router>
         <Switch>
