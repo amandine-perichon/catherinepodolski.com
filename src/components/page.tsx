@@ -1,7 +1,7 @@
 import React from 'react'
-import { Flex, Text, Link, Box } from '@chakra-ui/core'
+import { Flex, Text, Box } from '@chakra-ui/core'
 import styles from './page.module.css';
-import { Link as RouterLink } from "react-router-dom"
+import Link from './link'
 
 const Page: React.FC = ({ children }) =>
   <div>
@@ -10,8 +10,8 @@ const Page: React.FC = ({ children }) =>
         <div />
         <Text>Catherine Podolski</Text>
         <Box>
-          <Link as={RouterLink} to="/about">Bio</Link>
-          <Link as={RouterLink} to="/contact">Contact</Link>
+          <Link to="/about">Bio</Link>
+          <Link to="/contact">Contact</Link>
         </Box>
       </Flex>
     </nav>

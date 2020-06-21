@@ -4,7 +4,7 @@ import Page from './components/page'
 const AboutPage: React.FC = () => <Page>
   <h1>Bio</h1>
 
-  <p>Née en 1956, Catherine Podolski est tombée très tôt dans la potion magique de l'art et de la créativité. Depuis l&apos;enfance, elle se passionne pour la céramique grâce à laquelle elle crée un monde d&apos;une profondeur intense; un univers peuplé d&apos;émotions, de sentiments, d&apos;imagination et d&apos;intuition, cohabitant en harmonie parfaite.</p>
+  <p>Née en 1956, Catherine Podolski est tombée très tôt dans la potion magique de l&apos;art et de la créativité. Depuis l&apos;enfance, elle se passionne pour la céramique grâce à laquelle elle crée un monde d&apos;une profondeur intense; un univers peuplé d&apos;émotions, de sentiments, d&apos;imagination et d&apos;intuition, cohabitant en harmonie parfaite.</p>
 
   <q>Mon père m&apos;a donné la passion du jardinage, ma mère celle de la céramique. À l&apos;âge où l&apos;on donne un crayon aux enfants, j&apos;ai reçu en prime une boule de terre !</q>
 
