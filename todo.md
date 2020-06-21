@@ -1,5 +1,3 @@
-- Fix link as prop
-- Fix spacing between links
 - style header
 - add font Cardo?
 - style about page
