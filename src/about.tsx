@@ -1,7 +1,8 @@
 import React from 'react'
 import Page from './components/page'
 import PageContent from './components/page-content'
-import { Text, Stack, Heading } from '@chakra-ui/core'
+import { Text, Image, Stack, Heading } from '@chakra-ui/core'
+import catherine from '../public/images/bio/catherine.jpg'
 
 const AboutPage: React.FC = () => <Page>
   <PageContent>
@@ -17,6 +18,8 @@ const AboutPage: React.FC = () => <Page>
         <Text as="p">Depuis lors, Catherine a réalisé de nombreuses oeuvres dont plusieurs intégrations de céramique monumentale à Watermael-Boitsfort, en collaboration avec E. Dubrunfaut, A. Cape, D. Vandendriessche et C. Michiels.</Text>
 
         <Text as="p">Catherine est diplômée de l&apos;enseignement artistique supérieur en céramique à l&apos;académie de dessin et des arts décoratifs de Watermael-Boitsfort (1980). Elle fréquente les ateliers d&apos;Ann Cape, de Tony Van Goolen et de Daniel Vandendriessche (1964 à 1983). De plus, elle a été formée chez Mirko Orlandini pour le tournage et la poterie à l&apos;académie Constantin Meunier d&apos;Etterbeek.</Text>
+
+        <Image src={catherine} />
       </Stack>
     </Stack>
   </PageContent>
