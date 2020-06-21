@@ -7,10 +7,15 @@ import PageContent from './components/page-content'
 
 const HomePage: React.FC = () => <Page>
   <Box className={styles['image-links']}>
-    <ImageLink src="http://placekitten.com/500/500" to="/modele" overlayTitle="Pièces modelées" overlayColor="pink" />
-    <ImageLink src="http://placekitten.com/500/500" to="/modele" overlayTitle="Pièces modelées" overlayColor="pink" />
-    <ImageLink src="http://placekitten.com/500/500" to="/modele" overlayTitle="Pièces modelées" overlayColor="pink" />
-    <ImageLink src="http://placekitten.com/500/500" to="/modele" overlayTitle="Pièces modelées" overlayColor="pink" />
+    <ImageLink
+      src="http://placekitten.com/500/500"
+      to="/modele"
+      overlayTitle="Pièces modelées"
+      overlayColor="#504a8494"
+    />
+    <ImageLink src="http://placekitten.com/500/500" to="/modele" overlayTitle="Plats, vases et vaiselle" overlayColor="#504a8494" />
+    <ImageLink src="http://placekitten.com/500/500" to="/modele" overlayTitle="Oeuvres collectives" overlayColor="#504a8494" />
+    <ImageLink src="http://placekitten.com/500/500" to="/modele" overlayTitle="Maison et jardin" overlayColor="#504a8494" />
   </Box>
   <PageContent>
     <Box marginTop="20px">

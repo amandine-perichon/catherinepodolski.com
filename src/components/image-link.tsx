@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link as RouterLink } from 'react-router-dom'
-import { Image, Box } from '@chakra-ui/core'
+import { Image, Box, Text } from '@chakra-ui/core'
 import styles from './image-link.module.css'
 
 interface ImageLinkProps {
@@ -19,7 +19,9 @@ const ImageLink: React.FC<ImageLinkProps> = ({ overlayTitle, overlayColor, src, 
       "25%",
       "25%",
     ]} className={styles.container}>
-      <Box className={styles.overlay} style={{ backgroundColor: overlayColor }}>{overlayTitle}</Box>
+      <Box className={styles.overlay} style={{ backgroundColor: overlayColor }}>
+        <Text fontSize="xl" fontWeight="600">{overlayTitle}</Text>
+      </Box>
       <Image src={src} />
     </Box>
   </RouterLink>
