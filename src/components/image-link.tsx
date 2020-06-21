@@ -13,7 +13,12 @@ interface ImageLinkProps {
 const ImageLink: React.FC<ImageLinkProps> = ({ overlayTitle, overlayColor, src, to }) =>
   // @ts-ignore
   <RouterLink to={to}>
-    <Box className={styles.container}>
+    <Box width={[
+      "100%",
+      "50%",
+      "25%",
+      "25%",
+    ]} className={styles.container}>
       <Box className={styles.overlay} style={{ backgroundColor: overlayColor }}>{overlayTitle}</Box>
       <Image src={src} />
     </Box>

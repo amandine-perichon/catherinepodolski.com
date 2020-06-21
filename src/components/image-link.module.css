@@ -3,8 +3,12 @@
  display: inline-block;
 }
 
+.container img {
+  object-fit: cover;
+  object-position: center center;
+}
+
 .overlay {
-  outline: 1px solid pink;
   position: absolute;
   top: 0;
   left: 0;
