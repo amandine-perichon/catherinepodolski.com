@@ -4,6 +4,8 @@
   top: 0;
   width: 100%;
   padding: 20px;
+  background-color: white;
+  z-index: 999;
 }
 
 .link {
@@ -18,7 +20,7 @@
 .page-content {
   max-width: 800px;
   margin: auto;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .navbar a + a {
