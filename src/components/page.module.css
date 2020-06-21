@@ -11,9 +11,14 @@
 }
 
 .content {
-  padding: 20px;
   position: relative;
   top: 70px;
+}
+
+.page-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
 }
 
 .navbar a + a {
