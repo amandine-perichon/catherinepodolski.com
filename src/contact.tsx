@@ -1,5 +1,5 @@
 import React from 'react'
-import Page from './page'
+import Page from './components/page'
 
 const ContactPage: React.FC = () => <Page>
   <h1>Contact</h1>

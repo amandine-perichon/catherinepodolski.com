@@ -1,5 +1,5 @@
 import React from 'react'
-import Page from './page'
+import Page from './components/page'
 
 const GalleryPage: React.FC = () => <Page>Gallery</Page>
 
