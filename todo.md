@@ -2,7 +2,6 @@
 - find photo gallery
 - copyright
 - Add external links
-- Fix typos (ilot) 
 - Deploy
 
 Later

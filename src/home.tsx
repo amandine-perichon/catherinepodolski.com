@@ -23,7 +23,7 @@ const HomePage: React.FC = () => <Page>
   </Box>
   <PageContent>
     <Box marginTop="20px">
-      <p>Catherine Podolski est céramiste et jardinière de talent, sa maison est nichée dans un renfoncement de la rue de l&apos;hospice communal à Watermael-Boitsfort. Son jardin magnifique forme un ilot propice a la création.</p>
+      <p>Catherine Podolski est céramiste et jardinière de talent, sa maison est nichée dans un renfoncement de la rue de l&apos;hospice communal à Watermael-Boitsfort. Son jardin magnifique forme un îlot propice à la création.</p>
     </Box>
   </PageContent>
 </Page>
