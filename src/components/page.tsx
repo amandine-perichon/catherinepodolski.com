@@ -11,8 +11,8 @@ const Page: React.FC = ({ children }) =>
         <Link className={styles.link} to="/">
           <Text
             fontFamily="Sacramento"
-            lineHeight={["1.5rem", "2.5rem", "2.5rem", "2.5rem"]}
-            fontSize={["1.5rem", "2.5rem", "2.5rem", "2.5rem"]}
+            lineHeight={["1.5rem", "3rem", "3.25rem", "3.25rem"]}
+            fontSize={["1.5rem", "2rem", "2.5rem", "2.5rem"]}
           >
             Catherine Podolski
           </Text>
