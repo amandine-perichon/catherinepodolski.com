@@ -19,12 +19,14 @@ const Page: React.FC = ({ children }) =>
         </Link>
         <Box>
           <Link to="/">Accueil</Link>
-          <Link to="/about">Bio</Link>
+          <Link to="/about">Biographie</Link>
           <Link to="/contact">Contact</Link>
         </Box>
       </Flex>
     </nav>
-    <div className={styles.content}>{children}</div>
+    <div className={styles.content}>
+      {children}
+    </div>
   </div>
 
 export default Page
