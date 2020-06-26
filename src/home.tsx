@@ -4,18 +4,22 @@ import ImageLink from './components/image-link'
 import { Box } from '@chakra-ui/core'
 import styles from './home.module.css'
 import PageContent from './components/page-content'
+import house from '../public/images/bio/house.jpg'
+import modele from '../public/images/bio/modele.jpg'
+import plates from '../public/images/bio/plates.jpg'
+import collective from '../public/images/bio/collective.jpg'
 
 const HomePage: React.FC = () => <Page>
   <Box className={styles['image-links']}>
     <ImageLink
-      src="http://placekitten.com/500/500"
+      src={modele}
       to="/modele"
       overlayTitle="Pièces modelées"
-      overlayColor="#504a8494"
+      overlayColor="#483f20bf"
     />
-    <ImageLink src="http://placekitten.com/500/500" to="/modele" overlayTitle="Plats, vases et vaiselle" overlayColor="#504a8494" />
-    <ImageLink src="http://placekitten.com/500/500" to="/modele" overlayTitle="Oeuvres collectives" overlayColor="#504a8494" />
-    <ImageLink src="http://placekitten.com/500/500" to="/modele" overlayTitle="Maison et jardin" overlayColor="#504a8494" />
+    <ImageLink src={collective} to="/modele" overlayTitle="Oeuvres collectives" overlayColor="#48202bbf" />
+    <ImageLink src={plates} to="/modele" overlayTitle="Plats, vases et vaiselle" overlayColor="#242048bf" />
+    <ImageLink src={house} to="/modele" overlayTitle="Maison et jardin" overlayColor="#204842bf" />
   </Box>
   <PageContent>
     <Box marginTop="20px">

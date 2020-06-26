@@ -20,7 +20,7 @@ const ImageLink: React.FC<ImageLinkProps> = ({ overlayTitle, overlayColor, src, 
       "25%",
     ]} className={styles.container}>
       <Box className={styles.overlay} style={{ backgroundColor: overlayColor }}>
-        <Text fontSize="xl" fontWeight="600">{overlayTitle}</Text>
+        <Text color="white" textTransform="uppercase" fontSize="l" fontWeight="600">{overlayTitle}</Text>
       </Box>
       <Image src={src} />
     </Box>
