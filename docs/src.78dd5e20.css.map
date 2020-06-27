@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,QACE,sBAAwB,CACxB,yBACF","file":"src.78dd5e20.css","sourceRoot":"../src","sourcesContent":["a:focus {\n  outline: none !important;\n  box-shadow: none !important;\n}\n"]}

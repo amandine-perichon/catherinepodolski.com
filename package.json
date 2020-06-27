@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "NODE_ENV=production parcel build src/index.html --public-url https://amandine-perichon.github.io/catherinepodolski.com/",
-    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "build": "rm -rf docs/ && NODE_ENV=production parcel build src/index.html --out-dir docs --public-url https://amandine-perichon.github.io/catherinepodolski.com/ && touch docs/.nojekyll",
     "check": "tsc --noEmit --pretty --skipLibCheck && eslint . --ext .tsx",
     "pretty": "prettier 'src/**' --write"
   },
