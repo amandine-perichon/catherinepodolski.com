@@ -4,3 +4,19 @@
   text-align: center;
   box-sizing: border-box;
 }
+
+.caption-container {
+  padding: 4px;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  line-height: 14px;
+  top: -28px;
+  background-color: #00000052;
+}
+
+.caption {
+  font-family: sans-serif !important;
+  font-size: 12px;
+  color: white;
+}

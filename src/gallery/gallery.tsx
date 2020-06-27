@@ -1,12 +1,13 @@
 import Carousel, { CommonProps, ViewType } from 'react-images'
 import React from 'react'
-import { Image } from '@chakra-ui/core'
+import { Image, Text } from '@chakra-ui/core'
 import styles from './gallery.module.css'
 
-const View: React.FC<CommonProps & { data: { source: string } }> = ({ data }) => {
+const View: React.FC<CommonProps & { data: { source: string, caption: string } }> = ({ data }) => {
   return (
     <div className={styles.view}>
       <Image m="auto" objectFit="contain" height="100%" src={data.source} />
+      <div className={styles["caption-container"]}><Text className={styles.caption}>{data.caption}</Text></div>
     </div>
   )
 }

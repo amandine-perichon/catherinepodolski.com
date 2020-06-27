@@ -15,21 +15,19 @@ import cera0329 from '../../public/images/collective/cera0329.jpg'
 import cera0331 from '../../public/images/collective/cera0331.jpg'
 import cera0334 from '../../public/images/collective/cera0334.jpg'
 
-
-// TODO: Add captions
 const images = [
-  { source: cera7169, caption: '' },
-  { source: cera0288, caption: '' },
-  { source: cera0176, caption: '' },
-  { source: cera0268, caption: '' },
-  { source: cera0272, caption: '' },
-  { source: cera0273, caption: '' },
-  { source: cera0317, caption: '' },
-  { source: cera0321, caption: '' },
-  { source: cera0323, caption: '' },
-  { source: cera0329, caption: '' },
-  { source: cera0331, caption: '' },
-  { source: cera0334, caption: '' },
+  { source: cera7169, caption: 'D. Vandendriessche et Catherine Podolski' },
+  { source: cera0288, caption: 'D. Vandendriessche, Ann Cape et Catherine Podolski' },
+  { source: cera0176, caption: 'C. Michiels et Catherine Podolski' },
+  { source: cera0268, caption: 'D. Vandendriessche, Ann Cape et Catherine Podolski' },
+  { source: cera0272, caption: 'D. Vandendriessche, Ann Cape et Catherine Podolski' },
+  { source: cera0273, caption: 'D. Vandendriessche, Ann Cape et Catherine Podolski' },
+  { source: cera0317, caption: 'D. Vandendriessche et Catherine Podolski' },
+  { source: cera0321, caption: 'D. Vandendriessche et Catherine Podolski' },
+  { source: cera0323, caption: 'D. Vandendriessche et Catherine Podolski' },
+  { source: cera0329, caption: 'D. Vandendriessche et Catherine Podolski' },
+  { source: cera0331, caption: 'D. Vandendriessche et Catherine Podolski' },
+  { source: cera0334, caption: 'D. Vandendriessche et Catherine Podolski' },
 ];
 
 const CollectiveGalleryPage: React.FC = () => <Page>
