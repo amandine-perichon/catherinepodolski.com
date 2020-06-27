@@ -15,11 +15,10 @@ const HomePage: React.FC = () => <Page>
       src={modele}
       to="/modele"
       overlayTitle="Pièces modelées"
-      overlayColor="#483f20bf"
     />
-    <ImageLink src={collective} to="/modele" overlayTitle="Oeuvres collectives" overlayColor="#48202bbf" />
-    <ImageLink src={plates} to="/modele" overlayTitle="Plats, vases et vaiselle" overlayColor="#242048bf" />
-    <ImageLink src={house} to="/modele" overlayTitle="Maison et jardin" overlayColor="#204842bf" />
+    <ImageLink src={collective} to="/modele" overlayTitle={`Oeuvres collectives`} />
+    <ImageLink src={plates} to="/modele" overlayTitle="Plats, vases et vaiselle" />
+    <ImageLink src={house} to="/modele" overlayTitle="Maison et jardin" />
   </Box>
   <PageContent>
     <Box marginTop="20px">

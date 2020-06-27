@@ -5,14 +5,15 @@ import styles from './image-link.module.css'
 
 interface ImageLinkProps {
   overlayTitle: string
-  overlayColor: string
   src: string
   to: string
 }
 
-const ImageLink: React.FC<ImageLinkProps> = ({ overlayTitle, overlayColor, src, to }) =>
+const ImageLink: React.FC<ImageLinkProps> = ({ overlayTitle, src, to }) => {
+  const overlayColor = "#000000a6"
+
   // @ts-ignore
-  <RouterLink to={to}>
+  return < RouterLink to={to} >
     <Box width={[
       "100%",
       "50%",
@@ -24,6 +25,7 @@ const ImageLink: React.FC<ImageLinkProps> = ({ overlayTitle, overlayColor, src, 
       </Box>
       <Image src={src} />
     </Box>
-  </RouterLink>
+  </RouterLink >
+}
 
 export default ImageLink
