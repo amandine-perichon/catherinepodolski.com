@@ -17,7 +17,7 @@ const images = [{ source: house }, { source: modele }, { source: plates }, {
 const View: React.FC<CommonProps & { data: { source: string } }> = ({ data }) => {
   return (
     <div className={styles.view}>
-      <Image m="auto" height="100%" src={data.source} />
+      <Image m="auto" objectFit="contain" height="100%" src={data.source} />
     </div>
   )
 }
