@@ -6,17 +6,18 @@ import Link from './link'
 const Page: React.FC = ({ children }) =>
   <div>
     <nav className={styles.navbar}>
-      <Flex direction={["column", "row", "row", "row"]} alignItems="center" justifyContent="space-between">
-        <div />
+      <Flex justifyContent="center">
         <Link className={styles.link} to="/">
           <Text
             fontFamily="Sacramento"
-            lineHeight={["1.5rem", "3rem", "3.25rem", "3.25rem"]}
-            fontSize={["1.5rem", "2rem", "2.5rem", "2.5rem"]}
+            lineHeight={["1.5rem", "1.5rem", "3.25rem", "3.25rem"]}
+            fontSize={["1.5rem", "1.5rem", "2.5rem", "2.5rem"]}
           >
             Catherine Podolski
           </Text>
         </Link>
+      </Flex>
+      <Flex mt={[0, 0, "-40px", "-40px"]} justifyContent={["center", "center", "flex-end", "flex-end"]}>
         <Box>
           <Link to="/">Accueil</Link>
           <Link to="/about">Biographie</Link>
@@ -27,6 +28,6 @@ const Page: React.FC = ({ children }) =>
     <div className={styles.content}>
       {children}
     </div>
-  </div>
+  </div >
 
 export default Page
