@@ -19,11 +19,11 @@ import cera0334 from '../../public/images/collective/cera0334.jpg'
 // TODO: Add captions
 const images = [
   { source: cera7169, caption: '' },
+  { source: cera0288, caption: '' },
   { source: cera0176, caption: '' },
   { source: cera0268, caption: '' },
   { source: cera0272, caption: '' },
   { source: cera0273, caption: '' },
-  { source: cera0288, caption: '' },
   { source: cera0317, caption: '' },
   { source: cera0321, caption: '' },
   { source: cera0323, caption: '' },
