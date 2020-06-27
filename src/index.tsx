@@ -7,7 +7,11 @@ import customTheme from './theme'
 import HomePage from './home'
 import AboutPage from './about'
 import ContactPage from './contact'
-import GalleryPage from './gallery'
+
+import DecorativeGalleryPage from './gallery/decorative'
+import CollectiveGalleryPage from './gallery/collective'
+import UtilitarianGalleryPage from './gallery/utilitarian'
+import HouseGalleryPage from './gallery/house'
 
 function App() {
   return (
@@ -17,7 +21,12 @@ function App() {
         <Switch>
           <Route path="/about"><AboutPage /></Route>
           <Route path="/contact"><ContactPage /></Route>
-          <Route path="/gallery"><GalleryPage /></Route>
+
+          {/* Image Galleries */}
+          <Route path="/modelees"><DecorativeGalleryPage /></Route>
+          <Route path="/collectives"><CollectiveGalleryPage /></Route>
+          <Route path="/vaiselle"><UtilitarianGalleryPage /></Route>
+          <Route path="/maison"><HouseGalleryPage /></Route>
 
           <Route path="/"><HomePage /></Route>
         </Switch>

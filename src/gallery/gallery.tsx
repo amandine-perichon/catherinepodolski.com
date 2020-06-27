@@ -1,18 +1,7 @@
-import Carousel, { CommonProps } from 'react-images'
+import Carousel, { CommonProps, ViewType } from 'react-images'
 import React from 'react'
-import Page from './components/page'
 import { Image } from '@chakra-ui/core'
 import styles from './gallery.module.css'
-
-import house from '../public/images/home/house.jpg'
-import modele from '../public/images/home/modele.jpg'
-import plates from '../public/images/home/plates.jpg'
-import collective from '../public/images/home/collective.jpg'
-import test from '../public/images/modele/test.jpg'
-
-const images = [{ source: house }, { source: modele }, { source: plates }, {
-  source: collective, caption: "An image caption as a string, React Node, or a rendered HTML string",
-}, { source: test }];
 
 const View: React.FC<CommonProps & { data: { source: string } }> = ({ data }) => {
   return (
@@ -22,7 +11,7 @@ const View: React.FC<CommonProps & { data: { source: string } }> = ({ data }) =>
   )
 }
 
-const GalleryPage: React.FC = () => <Page>
+const Gallery: React.FC<{ images: Array<ViewType> }> = ({ images }) =>
   <Carousel
     hideControlsWhenIdle={false}
     views={images}
@@ -45,6 +34,5 @@ const GalleryPage: React.FC = () => <Page>
       })
     }}
   />
-</Page>
 
-export default GalleryPage
+export default Gallery

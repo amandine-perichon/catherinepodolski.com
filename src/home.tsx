@@ -13,12 +13,12 @@ const HomePage: React.FC = () => <Page>
   <Box className={styles['image-links']}>
     <ImageLink
       src={modele}
-      to="/modele"
+      to="/modelees"
       overlayTitle="Pièces modelées"
     />
-    <ImageLink src={collective} to="/modele" overlayTitle={`Oeuvres collectives`} />
-    <ImageLink src={plates} to="/modele" overlayTitle="Plats, vases et vaiselle" />
-    <ImageLink src={house} to="/modele" overlayTitle="Maison et jardin" />
+    <ImageLink src={collective} to="/collectives" overlayTitle={`Oeuvres collectives`} />
+    <ImageLink src={plates} to="/vaiselle" overlayTitle="Plats, vases et vaiselle" />
+    <ImageLink src={house} to="/maison" overlayTitle="Maison et jardin" />
   </Box>
   <PageContent>
     <Box marginTop="20px">

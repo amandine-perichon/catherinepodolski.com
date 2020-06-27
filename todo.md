@@ -1,4 +1,4 @@
-- add galleries link to home
+- add photos to galleries
 - Add external links
 - Deploy
 
