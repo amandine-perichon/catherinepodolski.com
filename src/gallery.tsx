@@ -1,4 +1,4 @@
-import Carousel from 'react-images'
+import Carousel, { CommonProps } from 'react-images'
 import React from 'react'
 import Page from './components/page'
 import { Image } from '@chakra-ui/core'
@@ -14,7 +14,7 @@ const images = [{ source: house }, { source: modele }, { source: plates }, {
   source: collective, caption: "An image caption as a string, React Node, or a rendered HTML string",
 }, { source: test }];
 
-const View: React.FC<{ data: { source: string } }> = ({ data }) => {
+const View: React.FC<CommonProps & { data: { source: string } }> = ({ data }) => {
   return (
     <div className={styles.view}>
       <Image m="auto" height="100%" src={data.source} />
