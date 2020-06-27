@@ -12,13 +12,13 @@
   },
   "author": "Amandine Perichon and Nicolas Maquet",
   "dependencies": {
-    "@brainhubeu/react-carousel": "^1.18.10",
     "@chakra-ui/core": "^0.8.0",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "emotion-theming": "^10.0.27",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-images": "^1.1.7",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {

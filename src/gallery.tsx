@@ -1,16 +1,50 @@
+import Carousel from 'react-images'
 import React from 'react'
 import Page from './components/page'
-// @ts-ignore
-import Carousel from '@brainhubeu/react-carousel';
+import { Image } from '@chakra-ui/core'
+import styles from './gallery.module.css'
 
-const images = ["http://placekitten.com/500/500", "http://placekitten.com/800/500", "http://placekitten.com/200/300", "http://placekitten.com/3000/3000"]
+import house from '../public/images/bio/house.jpg'
+import modele from '../public/images/bio/modele.jpg'
+import plates from '../public/images/bio/plates.jpg'
+import collective from '../public/images/bio/collective.jpg'
+import test from '../public/images/modele/test.jpg'
+
+const images = [{ source: house }, { source: modele }, { source: plates }, {
+  source: collective, caption: "An image caption as a string, React Node, or a rendered HTML string",
+}, { source: test }];
+
+const View: React.FC<{ data: { source: string } }> = ({ data }) => {
+  return (
+    <div className={styles.view}>
+      <Image m="auto" height="100%" src={data.source} />
+    </div>
+  )
+}
 
 const GalleryPage: React.FC = () => <Page>
-  <Carousel infinite arrows>
-    <img src={images[0]} />
-    <img src={images[1]} />
-    <img src={images[2]} />
-  </Carousel>
+  <Carousel
+    hideControlsWhenIdle={false}
+    views={images}
+    components={{ View, Footer: () => null }}
+    styles={{
+      container: (base) => ({
+        ...base,
+        paddingBottom: '20px',
+        height: 'initial'
+      }),
+      navigationNext: (base) => ({
+        ...base,
+        background: '#a5a4af33',
+        color: '#48494a'
+      }),
+      navigationPrev: (base) => ({
+        ...base,
+        background: '#a5a4af33',
+        color: '#48494a'
+      })
+    }}
+  />
 </Page>
 
 export default GalleryPage

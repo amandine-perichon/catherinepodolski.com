@@ -1,0 +1,6 @@
+.view {
+  height: calc(100vh - 100px);
+  line-height: 0;
+  text-align: center;
+  box-sizing: border-box;
+}

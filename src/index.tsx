@@ -3,7 +3,6 @@ import * as ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { ThemeProvider, CSSReset } from "@chakra-ui/core";
 import customTheme from './theme'
-import '@brainhubeu/react-carousel/lib/style.css';
 
 import HomePage from './home'
 import AboutPage from './about'
