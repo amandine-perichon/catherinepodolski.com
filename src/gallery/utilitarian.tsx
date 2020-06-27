@@ -32,34 +32,39 @@ import cera1959590 from '../../public/images/utilitarian/cera1959590.jpg'
 import cerachat0902 from '../../public/images/utilitarian/cerachat0902.jpg'
 
 const images = [
-  { source: cera0033 },
-  { source: cera0034 },
-  { source: cera0134 },
-  { source: cera0137 },
-  { source: cera0140 },
+  // Vases
+  { source: cera0199 },
+  { source: cera0341 },
+  { source: cera0218 },
+  { source: cera1656533 },
+  { source: cera1656536 },
   { source: cera0163 },
   { source: cera0169 },
-  { source: cera0199 },
+  { source: cera0221 },
+
+  // Vaisselle
+  { source: cerachat0902 },
+  { source: cera1757521 },
+  { source: cera1838363 },
+  { source: cera1464639 },
+  { source: cera0137 },
+  { source: cera0140 },
+  { source: cera0134 },
+  { source: cera0033 },
+  { source: cera0034 },
+
+  // Plats
   { source: cera0211 },
   { source: cera0215 },
   { source: cera0216 },
-  { source: cera0218 },
-  { source: cera0221 },
-  { source: cera0341 },
-  { source: cera1464639 },
   { source: cera1464646 },
   { source: cera1464652 },
   { source: cera1464654 },
   { source: cera1464655 },
   { source: cera1656528 },
-  { source: cera1656533 },
-  { source: cera1656536 },
   { source: cera1747454 },
-  { source: cera1757521 },
-  { source: cera1838363 },
   { source: cera1898969 },
   { source: cera1959590 },
-  { source: cerachat0902 }
 ];
 
 const UtilitarianGalleryPage: React.FC = () => <Page>
