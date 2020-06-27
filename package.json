@@ -1,6 +1,6 @@
 {
   "name": "catherinepodolski.com",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "rm -rf docs/ && NODE_ENV=production parcel build src/index.html --out-dir docs --public-url https://amandine-perichon.github.io/catherinepodolski.com/ && touch docs/.nojekyll",
