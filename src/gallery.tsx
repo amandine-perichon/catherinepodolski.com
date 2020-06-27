@@ -4,10 +4,10 @@ import Page from './components/page'
 import { Image } from '@chakra-ui/core'
 import styles from './gallery.module.css'
 
-import house from '../public/images/bio/house.jpg'
-import modele from '../public/images/bio/modele.jpg'
-import plates from '../public/images/bio/plates.jpg'
-import collective from '../public/images/bio/collective.jpg'
+import house from '../public/images/home/house.jpg'
+import modele from '../public/images/home/modele.jpg'
+import plates from '../public/images/home/plates.jpg'
+import collective from '../public/images/home/collective.jpg'
 import test from '../public/images/modele/test.jpg'
 
 const images = [{ source: house }, { source: modele }, { source: plates }, {

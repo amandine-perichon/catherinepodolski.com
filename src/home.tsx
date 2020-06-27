@@ -4,10 +4,10 @@ import ImageLink from './components/image-link'
 import { Box } from '@chakra-ui/core'
 import styles from './home.module.css'
 import PageContent from './components/page-content'
-import house from '../public/images/bio/house.jpg'
-import modele from '../public/images/bio/modele.jpg'
-import plates from '../public/images/bio/plates.jpg'
-import collective from '../public/images/bio/collective.jpg'
+import house from '../public/images/home/house.jpg'
+import modele from '../public/images/home/modele.jpg'
+import plates from '../public/images/home/plates.jpg'
+import collective from '../public/images/home/collective.jpg'
 
 const HomePage: React.FC = () => <Page>
   <Box className={styles['image-links']}>
