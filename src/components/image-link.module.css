@@ -18,17 +18,17 @@
 }
 
 .overlay:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 @media (hover:hover) {
   .overlay {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 
 @media (hover:none) {
   .overlay {
-    opacity: 100%;
+    opacity: 1;
   }
 }
