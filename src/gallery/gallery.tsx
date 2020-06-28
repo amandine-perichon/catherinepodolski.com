@@ -7,7 +7,11 @@ const View: React.FC<CommonProps & { data: { source: string, caption: string } }
   return (
     <div className={styles.view}>
       <Image m="auto" objectFit="contain" height="100%" src={data.source} />
-      <div className={styles["caption-container"]}><Text className={styles.caption}>{data.caption}</Text></div>
+      {data.caption &&
+        <div className={styles["caption-container"]}>
+          <Text className={styles.caption}>{data.caption}</Text>
+        </div>
+      }
     </div>
   )
 }
