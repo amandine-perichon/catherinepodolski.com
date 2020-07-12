@@ -66011,11 +66011,11 @@ var Page = function Page(_a) {
     to: "/"
   }, _react.default.createElement(_core.Text, {
     fontFamily: "Sacramento",
-    lineHeight: ["1.5rem", "1.5rem", "3.25rem", "3.25rem"],
-    fontSize: ["1.5rem", "1.5rem", "2.5rem", "2.5rem"]
+    lineHeight: ["1.5rem", "1.5rem", "1.5rem", "3.25rem"],
+    fontSize: ["1.5rem", "1.5rem", "1.5rem", "2.5rem"]
   }, "Catherine Podolski"))), _react.default.createElement(_core.Flex, {
-    mt: [0, 0, "-40px", "-40px"],
-    justifyContent: ["center", "center", "flex-end", "flex-end"]
+    mt: [0, 0, 0, "-40px"],
+    justifyContent: ["center", "center", "center", "flex-end"]
   }, _react.default.createElement(_core.Box, null, _react.default.createElement(_link.default, {
     to: "/"
   }, "Accueil"), _react.default.createElement(_link.default, {
@@ -66236,7 +66236,15 @@ var ContactPage = function ContactPage() {
 
 var _default = ContactPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/page-content":"components/page-content.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js"}],"components/image-link.module.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/page-content":"components/page-content.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js"}],"galleries.module.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+module.exports = {
+  "image-links": "_image-links_64682"
+};
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/image-link.module.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -76179,7 +76187,7 @@ var _pageContent = _interopRequireDefault(require("./components/page-content"));
 
 var _core = require("@chakra-ui/core");
 
-var _homeModule = _interopRequireDefault(require("./home.module.css"));
+var _galleriesModule = _interopRequireDefault(require("./galleries.module.css"));
 
 var _house = _interopRequireDefault(require("../public/images/home/house.jpg"));
 
@@ -76197,7 +76205,7 @@ var GalleriesPage = function GalleriesPage() {
   return _react.default.createElement(_page.default, null, _react.default.createElement(_pageContent.default, null, _react.default.createElement(_core.Stack, {
     spacing: 5
   }, _react.default.createElement(_core.Box, {
-    className: _homeModule.default['image-links']
+    className: _galleriesModule.default['image-links']
   }, _react.default.createElement(_imageLink.default, {
     src: _modele.default,
     to: "/modelees",
@@ -76227,7 +76235,7 @@ var GalleriesPage = function GalleriesPage() {
 
 var _default = GalleriesPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/page-content":"components/page-content.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./home.module.css":"home.module.css","../public/images/home/house.jpg":"../public/images/home/house.jpg","../public/images/home/modele.jpg":"../public/images/home/modele.jpg","../public/images/home/plates.jpg":"../public/images/home/plates.jpg","../public/images/home/collective.jpg":"../public/images/home/collective.jpg","./components/image-link":"components/image-link.tsx"}],"../node_modules/glam/lib/sheet.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/page-content":"components/page-content.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./galleries.module.css":"galleries.module.css","../public/images/home/house.jpg":"../public/images/home/house.jpg","../public/images/home/modele.jpg":"../public/images/home/modele.jpg","../public/images/home/plates.jpg":"../public/images/home/plates.jpg","../public/images/home/collective.jpg":"../public/images/home/collective.jpg","./components/image-link":"components/image-link.tsx"}],"../node_modules/glam/lib/sheet.js":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -91743,7 +91751,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49960" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56876" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
