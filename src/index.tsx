@@ -7,11 +7,14 @@ import customTheme from './theme'
 import HomePage from './home'
 import AboutPage from './about'
 import ContactPage from './contact'
+import GalleriesPage from './galleries'
 
 import DecorativeGalleryPage from './gallery/decorative'
 import CollectiveGalleryPage from './gallery/collective'
-import UtilitarianGalleryPage from './gallery/utilitarian'
+import DishesGalleryPage from './gallery/dishes'
+import VasesGalleryPage from './gallery/vases'
 import HouseGalleryPage from './gallery/house'
+import SDBGalleryPage from './gallery/sdb'
 
 function App() {
   return (
@@ -19,14 +22,17 @@ function App() {
       <CSSReset />
       <Router>
         <Switch>
-          <Route path="/about"><AboutPage /></Route>
+          <Route path="/bio"><AboutPage /></Route>
+          <Route path="/oeuvres"><GalleriesPage /></Route>
           <Route path="/contact"><ContactPage /></Route>
 
           {/* Image Galleries */}
           <Route path="/modelees"><DecorativeGalleryPage /></Route>
           <Route path="/collectives"><CollectiveGalleryPage /></Route>
-          <Route path="/vaiselle"><UtilitarianGalleryPage /></Route>
+          <Route path="/vaiselle"><DishesGalleryPage /></Route>
+          <Route path="/vases"><VasesGalleryPage /></Route>
           <Route path="/maison"><HouseGalleryPage /></Route>
+          <Route path="/sdb"><SDBGalleryPage /></Route>
 
           <Route path="/"><HomePage /></Route>
         </Switch>

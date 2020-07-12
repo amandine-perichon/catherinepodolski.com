@@ -20,8 +20,8 @@ const ImageLink: React.FC<ImageLinkProps> = ({ overlayTitle, src, to }) => {
     <MotionBox width={[
       "100%",
       "50%",
-      "25%",
-      "25%",
+      "50%",
+      "50%",
     ]}
       className={styles.container}
       whileHover={{ scale: 1.025, zIndex: 1 }}

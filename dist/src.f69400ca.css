@@ -26,6 +26,9 @@
 ._navbar_1493d a + a {
   margin-left: 1rem;
 }
+._images_63927 {
+  min-height: 250px;
+}
 ._container_39852 {
  position: relative;
  display: inline-block;
@@ -61,9 +64,6 @@
   ._overlay_39852 {
     opacity: 1;
   }
-}
-._image-links_63927 {
-  min-height: 250px;
 }
 ._view_47e7d {
   height: calc(100vh - 100px);

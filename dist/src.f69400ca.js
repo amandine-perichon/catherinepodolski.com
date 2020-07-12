@@ -66019,8 +66019,10 @@ var Page = function Page(_a) {
   }, _react.default.createElement(_core.Box, null, _react.default.createElement(_link.default, {
     to: "/"
   }, "Accueil"), _react.default.createElement(_link.default, {
-    to: "/about"
+    to: "/bio"
   }, "Biographie"), _react.default.createElement(_link.default, {
+    to: "/oeuvres"
+  }, "Oeuvres"), _react.default.createElement(_link.default, {
     to: "/contact"
   }, "Contact")))), _react.default.createElement("div", {
     className: _pageModule.default.content
@@ -66029,7 +66031,212 @@ var Page = function Page(_a) {
 
 var _default = Page;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./page.module.css":"components/page.module.css","./link":"components/link.tsx"}],"components/image-link.module.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./page.module.css":"components/page.module.css","./link":"components/link.tsx"}],"components/home-image.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _core = require("@chakra-ui/core");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var HomeImage = function HomeImage(_a) {
+  var src = _a.src;
+  return _react.default.createElement(_core.Box, {
+    display: "inline-block",
+    width: ["100%", "50%", "25%", "25%"]
+  }, _react.default.createElement(_core.Image, {
+    src: src
+  }));
+};
+
+var _default = HomeImage;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js"}],"home.module.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+module.exports = {
+  "images": "_images_63927"
+};
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/page-content.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _pageModule = _interopRequireDefault(require("./page.module.css"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var PageContent = function PageContent(_a) {
+  var children = _a.children;
+  return _react.default.createElement("div", {
+    className: _pageModule.default['page-content']
+  }, children);
+};
+
+var _default = PageContent;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./page.module.css":"components/page.module.css"}],"../public/images/home/house.jpg":[function(require,module,exports) {
+module.exports = "/house.f3eb3929.jpg";
+},{}],"../public/images/home/modele.jpg":[function(require,module,exports) {
+module.exports = "/modele.f5ddb7a1.jpg";
+},{}],"../public/images/home/plates.jpg":[function(require,module,exports) {
+module.exports = "/plates.b41fbc71.jpg";
+},{}],"../public/images/home/collective.jpg":[function(require,module,exports) {
+module.exports = "/collective.438bbb3a.jpg";
+},{}],"home.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _page = _interopRequireDefault(require("./components/page"));
+
+var _homeImage = _interopRequireDefault(require("./components/home-image"));
+
+var _core = require("@chakra-ui/core");
+
+var _homeModule = _interopRequireDefault(require("./home.module.css"));
+
+var _pageContent = _interopRequireDefault(require("./components/page-content"));
+
+var _house = _interopRequireDefault(require("../public/images/home/house.jpg"));
+
+var _modele = _interopRequireDefault(require("../public/images/home/modele.jpg"));
+
+var _plates = _interopRequireDefault(require("../public/images/home/plates.jpg"));
+
+var _collective = _interopRequireDefault(require("../public/images/home/collective.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var HomePage = function HomePage() {
+  return _react.default.createElement(_page.default, null, _react.default.createElement(_core.Box, {
+    className: _homeModule.default.images
+  }, _react.default.createElement(_homeImage.default, {
+    src: _modele.default
+  }), _react.default.createElement(_homeImage.default, {
+    src: _collective.default
+  }), _react.default.createElement(_homeImage.default, {
+    src: _plates.default
+  }), _react.default.createElement(_homeImage.default, {
+    src: _house.default
+  })), _react.default.createElement(_pageContent.default, null, _react.default.createElement(_core.Box, {
+    marginTop: "20px"
+  }, _react.default.createElement("p", null, "Catherine Podolski est c\xE9ramiste et jardini\xE8re de talent, sa maison est nich\xE9e dans un renfoncement de la rue de l'hospice communal \xE0 Watermael-Boitsfort. Son jardin magnifique forme un \xEElot propice \xE0 la cr\xE9ation."))));
+};
+
+var _default = HomePage;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/home-image":"components/home-image.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./home.module.css":"home.module.css","./components/page-content":"components/page-content.tsx","../public/images/home/house.jpg":"../public/images/home/house.jpg","../public/images/home/modele.jpg":"../public/images/home/modele.jpg","../public/images/home/plates.jpg":"../public/images/home/plates.jpg","../public/images/home/collective.jpg":"../public/images/home/collective.jpg"}],"../public/images/bio/catherine.jpg":[function(require,module,exports) {
+module.exports = "/catherine.8f7f3554.jpg";
+},{}],"about.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _page = _interopRequireDefault(require("./components/page"));
+
+var _pageContent = _interopRequireDefault(require("./components/page-content"));
+
+var _core = require("@chakra-ui/core");
+
+var _catherine = _interopRequireDefault(require("../public/images/bio/catherine.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AboutPage = function AboutPage() {
+  return _react.default.createElement(_page.default, null, _react.default.createElement(_pageContent.default, null, _react.default.createElement(_core.Stack, {
+    spacing: 5
+  }, _react.default.createElement(_core.Heading, {
+    size: "md"
+  }, "Biographie"), _react.default.createElement(_core.Stack, {
+    spacing: 3
+  }, _react.default.createElement(_core.Flex, {
+    direction: ["column", "column", "row", "row"],
+    alignItems: ["center", "center", "flex-start", "flex-start"]
+  }, _react.default.createElement(_core.Stack, {
+    spacing: 8
+  }, _react.default.createElement(_core.Text, {
+    as: "p"
+  }, "N\xE9e en 1956, Catherine Podolski est tomb\xE9e tr\xE8s t\xF4t dans la potion magique de l'art et de la cr\xE9ativit\xE9. Depuis l'enfance, elle se passionne pour la c\xE9ramique gr\xE2ce \xE0 laquelle elle cr\xE9e un monde d'une profondeur intense; un univers peupl\xE9 d'\xE9motions, de sentiments, d'imagination et d'intuition, cohabitant en harmonie parfaite."), _react.default.createElement(_core.Text, {
+    marginLeft: 10,
+    as: "p",
+    fontStyle: "italic"
+  }, "\"Mon p\xE8re m'a donn\xE9 la passion du jardinage, ma m\xE8re celle de la c\xE9ramique. \xC0 l'\xE2ge o\xF9 l'on donne un crayon aux enfants, j'ai re\xE7u en prime une boule de terre !\"")), _react.default.createElement(_core.Image, {
+    m: ["30px 20px", "30px 20px", "0px 0px 10px 30px", "0px 0px 10px 30px"],
+    width: 250,
+    height: 336,
+    src: _catherine.default
+  })), _react.default.createElement(_core.Text, {
+    as: "p"
+  }, "Depuis lors, Catherine a r\xE9alis\xE9 de nombreuses oeuvres dont plusieurs int\xE9grations de c\xE9ramique monumentale \xE0 Watermael-Boitsfort, en collaboration avec E. Dubrunfaut, A. Cape, D. Vandendriessche et C. Michiels."), _react.default.createElement(_core.Text, {
+    as: "p"
+  }, "Catherine est dipl\xF4m\xE9e de l'enseignement artistique sup\xE9rieur en c\xE9ramique \xE0 l'acad\xE9mie de dessin et des arts d\xE9coratifs de Watermael-Boitsfort (1980). Elle fr\xE9quente les ateliers d'Ann Cape, de Tony Van Goolen et de Daniel Vandendriessche (1964 \xE0 1983). De plus, elle a \xE9t\xE9 form\xE9e chez Mirko Orlandini pour le tournage et la poterie \xE0 l'acad\xE9mie Constantin Meunier d'Etterbeek.")))));
+};
+
+var _default = AboutPage;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/page-content":"components/page-content.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","../public/images/bio/catherine.jpg":"../public/images/bio/catherine.jpg"}],"contact.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _page = _interopRequireDefault(require("./components/page"));
+
+var _pageContent = _interopRequireDefault(require("./components/page-content"));
+
+var _core = require("@chakra-ui/core");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ContactPage = function ContactPage() {
+  return _react.default.createElement(_page.default, null, _react.default.createElement(_pageContent.default, null, _react.default.createElement(_core.Stack, {
+    spacing: 5
+  }, _react.default.createElement(_core.Heading, {
+    size: "md"
+  }, "Contact"), _react.default.createElement("p", null, _react.default.createElement("a", {
+    href: "mailto:catherine.podolski@skynet.be"
+  }, "catherine.podolski@skynet.be")), _react.default.createElement(_core.Flex, {
+    as: "footer",
+    justifyContent: "center"
+  }, _react.default.createElement(_core.Text, {
+    as: "span",
+    color: "grey",
+    marginTop: "60px",
+    fontSize: "xs"
+  }, "\xA9 Catherine Podolski - Tous droits r\xE9serv\xE9s - 2020")))));
+};
+
+var _default = ContactPage;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/page-content":"components/page-content.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js"}],"components/image-link.module.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -75930,7 +76137,7 @@ var ImageLink = function ImageLink(_a) {
   return _react.default.createElement(_reactRouterDom.Link, {
     to: to
   }, _react.default.createElement(MotionBox, {
-    width: ["100%", "50%", "25%", "25%"],
+    width: ["100%", "50%", "50%", "50%"],
     className: _imageLinkModule.default.container,
     whileHover: {
       scale: 1.025,
@@ -75956,46 +76163,7 @@ var ImageLink = function ImageLink(_a) {
 
 var _default = ImageLink;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./image-link.module.css":"components/image-link.module.css","framer-motion":"../node_modules/framer-motion/dist/framer-motion.es.js"}],"home.module.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-module.exports = {
-  "image-links": "_image-links_63927"
-};
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/page-content.tsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _pageModule = _interopRequireDefault(require("./page.module.css"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var PageContent = function PageContent(_a) {
-  var children = _a.children;
-  return _react.default.createElement("div", {
-    className: _pageModule.default['page-content']
-  }, children);
-};
-
-var _default = PageContent;
-exports.default = _default;
-},{"react":"../node_modules/react/index.js","./page.module.css":"components/page.module.css"}],"../public/images/home/house.jpg":[function(require,module,exports) {
-module.exports = "/house.f3eb3929.jpg";
-},{}],"../public/images/home/modele.jpg":[function(require,module,exports) {
-module.exports = "/modele.f5ddb7a1.jpg";
-},{}],"../public/images/home/plates.jpg":[function(require,module,exports) {
-module.exports = "/plates.b41fbc71.jpg";
-},{}],"../public/images/home/collective.jpg":[function(require,module,exports) {
-module.exports = "/collective.438bbb3a.jpg";
-},{}],"home.tsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./image-link.module.css":"components/image-link.module.css","framer-motion":"../node_modules/framer-motion/dist/framer-motion.es.js"}],"galleries.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -76007,13 +76175,11 @@ var _react = _interopRequireDefault(require("react"));
 
 var _page = _interopRequireDefault(require("./components/page"));
 
-var _imageLink = _interopRequireDefault(require("./components/image-link"));
+var _pageContent = _interopRequireDefault(require("./components/page-content"));
 
 var _core = require("@chakra-ui/core");
 
 var _homeModule = _interopRequireDefault(require("./home.module.css"));
-
-var _pageContent = _interopRequireDefault(require("./components/page-content"));
 
 var _house = _interopRequireDefault(require("../public/images/home/house.jpg"));
 
@@ -76023,10 +76189,14 @@ var _plates = _interopRequireDefault(require("../public/images/home/plates.jpg")
 
 var _collective = _interopRequireDefault(require("../public/images/home/collective.jpg"));
 
+var _imageLink = _interopRequireDefault(require("./components/image-link"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var HomePage = function HomePage() {
-  return _react.default.createElement(_page.default, null, _react.default.createElement(_core.Box, {
+var GalleriesPage = function GalleriesPage() {
+  return _react.default.createElement(_page.default, null, _react.default.createElement(_pageContent.default, null, _react.default.createElement(_core.Stack, {
+    spacing: 5
+  }, _react.default.createElement(_core.Box, {
     className: _homeModule.default['image-links']
   }, _react.default.createElement(_imageLink.default, {
     src: _modele.default,
@@ -76039,111 +76209,25 @@ var HomePage = function HomePage() {
   }), _react.default.createElement(_imageLink.default, {
     src: _plates.default,
     to: "/vaiselle",
-    overlayTitle: "Plats, vases et vaiselle"
+    overlayTitle: "Plats et vaiselle"
+  }), _react.default.createElement(_imageLink.default, {
+    src: _plates.default,
+    to: "/vases",
+    overlayTitle: "Vases"
   }), _react.default.createElement(_imageLink.default, {
     src: _house.default,
     to: "/maison",
-    overlayTitle: "Maison et jardin"
-  })), _react.default.createElement(_pageContent.default, null, _react.default.createElement(_core.Box, {
-    marginTop: "20px"
-  }, _react.default.createElement("p", null, "Catherine Podolski est c\xE9ramiste et jardini\xE8re de talent, sa maison est nich\xE9e dans un renfoncement de la rue de l'hospice communal \xE0 Watermael-Boitsfort. Son jardin magnifique forme un \xEElot propice \xE0 la cr\xE9ation."))));
+    overlayTitle: "Maison et jardin de Catherine"
+  }), _react.default.createElement(_imageLink.default, {
+    src: _house.default,
+    to: "/sdb",
+    overlayTitle: "Salles de bain et cuisines"
+  })))));
 };
 
-var _default = HomePage;
+var _default = GalleriesPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/image-link":"components/image-link.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./home.module.css":"home.module.css","./components/page-content":"components/page-content.tsx","../public/images/home/house.jpg":"../public/images/home/house.jpg","../public/images/home/modele.jpg":"../public/images/home/modele.jpg","../public/images/home/plates.jpg":"../public/images/home/plates.jpg","../public/images/home/collective.jpg":"../public/images/home/collective.jpg"}],"../public/images/bio/catherine.jpg":[function(require,module,exports) {
-module.exports = "/catherine.8f7f3554.jpg";
-},{}],"about.tsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _page = _interopRequireDefault(require("./components/page"));
-
-var _pageContent = _interopRequireDefault(require("./components/page-content"));
-
-var _core = require("@chakra-ui/core");
-
-var _catherine = _interopRequireDefault(require("../public/images/bio/catherine.jpg"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var AboutPage = function AboutPage() {
-  return _react.default.createElement(_page.default, null, _react.default.createElement(_pageContent.default, null, _react.default.createElement(_core.Stack, {
-    spacing: 5
-  }, _react.default.createElement(_core.Heading, {
-    size: "md"
-  }, "Biographie"), _react.default.createElement(_core.Stack, {
-    spacing: 3
-  }, _react.default.createElement(_core.Flex, {
-    direction: ["column", "column", "row", "row"],
-    alignItems: ["center", "center", "flex-start", "flex-start"]
-  }, _react.default.createElement(_core.Stack, {
-    spacing: 8
-  }, _react.default.createElement(_core.Text, {
-    as: "p"
-  }, "N\xE9e en 1956, Catherine Podolski est tomb\xE9e tr\xE8s t\xF4t dans la potion magique de l'art et de la cr\xE9ativit\xE9. Depuis l'enfance, elle se passionne pour la c\xE9ramique gr\xE2ce \xE0 laquelle elle cr\xE9e un monde d'une profondeur intense; un univers peupl\xE9 d'\xE9motions, de sentiments, d'imagination et d'intuition, cohabitant en harmonie parfaite."), _react.default.createElement(_core.Text, {
-    marginLeft: 10,
-    as: "p",
-    fontStyle: "italic"
-  }, "\"Mon p\xE8re m'a donn\xE9 la passion du jardinage, ma m\xE8re celle de la c\xE9ramique. \xC0 l'\xE2ge o\xF9 l'on donne un crayon aux enfants, j'ai re\xE7u en prime une boule de terre !\"")), _react.default.createElement(_core.Image, {
-    m: ["30px 20px", "30px 20px", "0px 0px 10px 30px", "0px 0px 10px 30px"],
-    width: 250,
-    height: 336,
-    src: _catherine.default
-  })), _react.default.createElement(_core.Text, {
-    as: "p"
-  }, "Depuis lors, Catherine a r\xE9alis\xE9 de nombreuses oeuvres dont plusieurs int\xE9grations de c\xE9ramique monumentale \xE0 Watermael-Boitsfort, en collaboration avec E. Dubrunfaut, A. Cape, D. Vandendriessche et C. Michiels."), _react.default.createElement(_core.Text, {
-    as: "p"
-  }, "Catherine est dipl\xF4m\xE9e de l'enseignement artistique sup\xE9rieur en c\xE9ramique \xE0 l'acad\xE9mie de dessin et des arts d\xE9coratifs de Watermael-Boitsfort (1980). Elle fr\xE9quente les ateliers d'Ann Cape, de Tony Van Goolen et de Daniel Vandendriessche (1964 \xE0 1983). De plus, elle a \xE9t\xE9 form\xE9e chez Mirko Orlandini pour le tournage et la poterie \xE0 l'acad\xE9mie Constantin Meunier d'Etterbeek.")))));
-};
-
-var _default = AboutPage;
-exports.default = _default;
-},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/page-content":"components/page-content.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","../public/images/bio/catherine.jpg":"../public/images/bio/catherine.jpg"}],"contact.tsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _page = _interopRequireDefault(require("./components/page"));
-
-var _pageContent = _interopRequireDefault(require("./components/page-content"));
-
-var _core = require("@chakra-ui/core");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var ContactPage = function ContactPage() {
-  return _react.default.createElement(_page.default, null, _react.default.createElement(_pageContent.default, null, _react.default.createElement(_core.Stack, {
-    spacing: 5
-  }, _react.default.createElement(_core.Heading, {
-    size: "md"
-  }, "Contact"), _react.default.createElement("p", null, _react.default.createElement("a", {
-    href: "mailto:catherine.podolski@skynet.be"
-  }, "catherine.podolski@skynet.be")), _react.default.createElement(_core.Flex, {
-    as: "footer",
-    justifyContent: "center"
-  }, _react.default.createElement(_core.Text, {
-    as: "span",
-    color: "grey",
-    marginTop: "60px",
-    fontSize: "xs"
-  }, "\xA9 Catherine Podolski - Tous droits r\xE9serv\xE9s - 2020")))));
-};
-
-var _default = ContactPage;
-exports.default = _default;
-},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/page-content":"components/page-content.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js"}],"../node_modules/glam/lib/sheet.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/page-content":"components/page-content.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./home.module.css":"home.module.css","../public/images/home/house.jpg":"../public/images/home/house.jpg","../public/images/home/modele.jpg":"../public/images/home/modele.jpg","../public/images/home/plates.jpg":"../public/images/home/plates.jpg","../public/images/home/collective.jpg":"../public/images/home/collective.jpg","./components/image-link":"components/image-link.tsx"}],"../node_modules/glam/lib/sheet.js":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -91122,63 +91206,47 @@ var CollectiveGalleryPage = function CollectiveGalleryPage() {
 
 var _default = CollectiveGalleryPage;
 exports.default = _default;
-},{"./gallery":"gallery/gallery.tsx","../components/page":"components/page.tsx","react":"../node_modules/react/index.js","../../public/images/collective/cera7169.jpg":"../public/images/collective/cera7169.jpg","../../public/images/collective/cera0176.jpg":"../public/images/collective/cera0176.jpg","../../public/images/collective/cera0268.jpg":"../public/images/collective/cera0268.jpg","../../public/images/collective/cera0272.jpg":"../public/images/collective/cera0272.jpg","../../public/images/collective/cera0273.jpg":"../public/images/collective/cera0273.jpg","../../public/images/collective/cera0288.jpg":"../public/images/collective/cera0288.jpg","../../public/images/collective/cera0317.jpg":"../public/images/collective/cera0317.jpg","../../public/images/collective/cera0321.jpg":"../public/images/collective/cera0321.jpg","../../public/images/collective/cera0323.jpg":"../public/images/collective/cera0323.jpg","../../public/images/collective/cera0329.jpg":"../public/images/collective/cera0329.jpg","../../public/images/collective/cera0331.jpg":"../public/images/collective/cera0331.jpg","../../public/images/collective/cera0334.jpg":"../public/images/collective/cera0334.jpg"}],"../public/images/utilitarian/cera0033.jpg":[function(require,module,exports) {
-module.exports = "/cera0033.47abde12.jpg";
-},{}],"../public/images/utilitarian/cera0034.jpg":[function(require,module,exports) {
-module.exports = "/cera0034.0f8a9cda.jpg";
-},{}],"../public/images/utilitarian/cera0134.jpg":[function(require,module,exports) {
-module.exports = "/cera0134.b7d0dc93.jpg";
-},{}],"../public/images/utilitarian/cera0137.jpg":[function(require,module,exports) {
-module.exports = "/cera0137.16d4d478.jpg";
-},{}],"../public/images/utilitarian/cera0140.jpg":[function(require,module,exports) {
-module.exports = "/cera0140.00fbf573.jpg";
-},{}],"../public/images/utilitarian/cera0163.jpg":[function(require,module,exports) {
-module.exports = "/cera0163.aa94c1fa.jpg";
-},{}],"../public/images/utilitarian/cera0169.jpg":[function(require,module,exports) {
-module.exports = "/cera0169.5fdfe7ef.jpg";
-},{}],"../public/images/utilitarian/cera0199.jpg":[function(require,module,exports) {
-module.exports = "/cera0199.80c70d85.jpg";
-},{}],"../public/images/utilitarian/cera0211.jpg":[function(require,module,exports) {
-module.exports = "/cera0211.b194ffb4.jpg";
-},{}],"../public/images/utilitarian/cera0215.jpg":[function(require,module,exports) {
-module.exports = "/cera0215.36cd39e0.jpg";
-},{}],"../public/images/utilitarian/cera0216.jpg":[function(require,module,exports) {
-module.exports = "/cera0216.d3f6652f.jpg";
-},{}],"../public/images/utilitarian/cera0218.jpg":[function(require,module,exports) {
-module.exports = "/cera0218.3fd4a4b4.jpg";
-},{}],"../public/images/utilitarian/cera0221.jpg":[function(require,module,exports) {
-module.exports = "/cera0221.e4187981.jpg";
-},{}],"../public/images/utilitarian/cera0341.jpg":[function(require,module,exports) {
-module.exports = "/cera0341.6b7e1bcc.jpg";
-},{}],"../public/images/utilitarian/cera1464639.jpg":[function(require,module,exports) {
-module.exports = "/cera1464639.7c91a13d.jpg";
-},{}],"../public/images/utilitarian/cera1464646.jpg":[function(require,module,exports) {
-module.exports = "/cera1464646.cfb94a8b.jpg";
-},{}],"../public/images/utilitarian/cera1464652.jpg":[function(require,module,exports) {
-module.exports = "/cera1464652.0f78611f.jpg";
-},{}],"../public/images/utilitarian/cera1464654.jpg":[function(require,module,exports) {
-module.exports = "/cera1464654.3bd8247c.jpg";
-},{}],"../public/images/utilitarian/cera1464655.jpg":[function(require,module,exports) {
-module.exports = "/cera1464655.d58098f3.jpg";
-},{}],"../public/images/utilitarian/cera1656528.jpg":[function(require,module,exports) {
-module.exports = "/cera1656528.5fea8629.jpg";
-},{}],"../public/images/utilitarian/cera1656533.jpg":[function(require,module,exports) {
-module.exports = "/cera1656533.4bae6884.jpg";
-},{}],"../public/images/utilitarian/cera1656536.jpg":[function(require,module,exports) {
-module.exports = "/cera1656536.630d05a8.jpg";
-},{}],"../public/images/utilitarian/cera1747454.jpg":[function(require,module,exports) {
-module.exports = "/cera1747454.ed6a6a58.jpg";
-},{}],"../public/images/utilitarian/cera1757521.jpg":[function(require,module,exports) {
-module.exports = "/cera1757521.0c7ac1fc.jpg";
-},{}],"../public/images/utilitarian/cera1838363.jpg":[function(require,module,exports) {
-module.exports = "/cera1838363.30c5624c.jpg";
-},{}],"../public/images/utilitarian/cera1898969.jpg":[function(require,module,exports) {
-module.exports = "/cera1898969.d22af42d.jpg";
-},{}],"../public/images/utilitarian/cera1959590.jpg":[function(require,module,exports) {
-module.exports = "/cera1959590.66833f40.jpg";
-},{}],"../public/images/utilitarian/cerachat0902.jpg":[function(require,module,exports) {
-module.exports = "/cerachat0902.9fc86749.jpg";
-},{}],"gallery/utilitarian.tsx":[function(require,module,exports) {
+},{"./gallery":"gallery/gallery.tsx","../components/page":"components/page.tsx","react":"../node_modules/react/index.js","../../public/images/collective/cera7169.jpg":"../public/images/collective/cera7169.jpg","../../public/images/collective/cera0176.jpg":"../public/images/collective/cera0176.jpg","../../public/images/collective/cera0268.jpg":"../public/images/collective/cera0268.jpg","../../public/images/collective/cera0272.jpg":"../public/images/collective/cera0272.jpg","../../public/images/collective/cera0273.jpg":"../public/images/collective/cera0273.jpg","../../public/images/collective/cera0288.jpg":"../public/images/collective/cera0288.jpg","../../public/images/collective/cera0317.jpg":"../public/images/collective/cera0317.jpg","../../public/images/collective/cera0321.jpg":"../public/images/collective/cera0321.jpg","../../public/images/collective/cera0323.jpg":"../public/images/collective/cera0323.jpg","../../public/images/collective/cera0329.jpg":"../public/images/collective/cera0329.jpg","../../public/images/collective/cera0331.jpg":"../public/images/collective/cera0331.jpg","../../public/images/collective/cera0334.jpg":"../public/images/collective/cera0334.jpg"}],"../public/images/dishes/cera0033.jpg":[function(require,module,exports) {
+module.exports = "/cera0033.8dda6eae.jpg";
+},{}],"../public/images/dishes/cera0034.jpg":[function(require,module,exports) {
+module.exports = "/cera0034.b6c1f5e8.jpg";
+},{}],"../public/images/dishes/cera0134.jpg":[function(require,module,exports) {
+module.exports = "/cera0134.c849e5c2.jpg";
+},{}],"../public/images/dishes/cera0137.jpg":[function(require,module,exports) {
+module.exports = "/cera0137.5c15f483.jpg";
+},{}],"../public/images/dishes/cera0140.jpg":[function(require,module,exports) {
+module.exports = "/cera0140.b1632ce0.jpg";
+},{}],"../public/images/dishes/cera0211.jpg":[function(require,module,exports) {
+module.exports = "/cera0211.9c57097f.jpg";
+},{}],"../public/images/dishes/cera0215.jpg":[function(require,module,exports) {
+module.exports = "/cera0215.d99730f3.jpg";
+},{}],"../public/images/dishes/cera0216.jpg":[function(require,module,exports) {
+module.exports = "/cera0216.dc14c797.jpg";
+},{}],"../public/images/dishes/cera1464639.jpg":[function(require,module,exports) {
+module.exports = "/cera1464639.b3afb62a.jpg";
+},{}],"../public/images/dishes/cera1464646.jpg":[function(require,module,exports) {
+module.exports = "/cera1464646.00d46106.jpg";
+},{}],"../public/images/dishes/cera1464652.jpg":[function(require,module,exports) {
+module.exports = "/cera1464652.8a79a944.jpg";
+},{}],"../public/images/dishes/cera1464654.jpg":[function(require,module,exports) {
+module.exports = "/cera1464654.2db15ae1.jpg";
+},{}],"../public/images/dishes/cera1464655.jpg":[function(require,module,exports) {
+module.exports = "/cera1464655.65f97a34.jpg";
+},{}],"../public/images/dishes/cera1656528.jpg":[function(require,module,exports) {
+module.exports = "/cera1656528.cceb980b.jpg";
+},{}],"../public/images/dishes/cera1747454.jpg":[function(require,module,exports) {
+module.exports = "/cera1747454.36df3dd6.jpg";
+},{}],"../public/images/dishes/cera1757521.jpg":[function(require,module,exports) {
+module.exports = "/cera1757521.8653d8ee.jpg";
+},{}],"../public/images/dishes/cera1838363.jpg":[function(require,module,exports) {
+module.exports = "/cera1838363.fc40f311.jpg";
+},{}],"../public/images/dishes/cera1898969.jpg":[function(require,module,exports) {
+module.exports = "/cera1898969.c5e854df.jpg";
+},{}],"../public/images/dishes/cera1959590.jpg":[function(require,module,exports) {
+module.exports = "/cera1959590.1348f10d.jpg";
+},{}],"../public/images/dishes/cerachat0902.jpg":[function(require,module,exports) {
+module.exports = "/cerachat0902.0f7938dd.jpg";
+},{}],"gallery/dishes.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -91192,90 +91260,57 @@ var _page = _interopRequireDefault(require("../components/page"));
 
 var _react = _interopRequireDefault(require("react"));
 
-var _cera = _interopRequireDefault(require("../../public/images/utilitarian/cera0033.jpg"));
+var _cera = _interopRequireDefault(require("../../public/images/dishes/cera0033.jpg"));
 
-var _cera2 = _interopRequireDefault(require("../../public/images/utilitarian/cera0034.jpg"));
+var _cera2 = _interopRequireDefault(require("../../public/images/dishes/cera0034.jpg"));
 
-var _cera3 = _interopRequireDefault(require("../../public/images/utilitarian/cera0134.jpg"));
+var _cera3 = _interopRequireDefault(require("../../public/images/dishes/cera0134.jpg"));
 
-var _cera4 = _interopRequireDefault(require("../../public/images/utilitarian/cera0137.jpg"));
+var _cera4 = _interopRequireDefault(require("../../public/images/dishes/cera0137.jpg"));
 
-var _cera5 = _interopRequireDefault(require("../../public/images/utilitarian/cera0140.jpg"));
+var _cera5 = _interopRequireDefault(require("../../public/images/dishes/cera0140.jpg"));
 
-var _cera6 = _interopRequireDefault(require("../../public/images/utilitarian/cera0163.jpg"));
+var _cera6 = _interopRequireDefault(require("../../public/images/dishes/cera0211.jpg"));
 
-var _cera7 = _interopRequireDefault(require("../../public/images/utilitarian/cera0169.jpg"));
+var _cera7 = _interopRequireDefault(require("../../public/images/dishes/cera0215.jpg"));
 
-var _cera8 = _interopRequireDefault(require("../../public/images/utilitarian/cera0199.jpg"));
+var _cera8 = _interopRequireDefault(require("../../public/images/dishes/cera0216.jpg"));
 
-var _cera9 = _interopRequireDefault(require("../../public/images/utilitarian/cera0211.jpg"));
+var _cera9 = _interopRequireDefault(require("../../public/images/dishes/cera1464639.jpg"));
 
-var _cera10 = _interopRequireDefault(require("../../public/images/utilitarian/cera0215.jpg"));
+var _cera10 = _interopRequireDefault(require("../../public/images/dishes/cera1464646.jpg"));
 
-var _cera11 = _interopRequireDefault(require("../../public/images/utilitarian/cera0216.jpg"));
+var _cera11 = _interopRequireDefault(require("../../public/images/dishes/cera1464652.jpg"));
 
-var _cera12 = _interopRequireDefault(require("../../public/images/utilitarian/cera0218.jpg"));
+var _cera12 = _interopRequireDefault(require("../../public/images/dishes/cera1464654.jpg"));
 
-var _cera13 = _interopRequireDefault(require("../../public/images/utilitarian/cera0221.jpg"));
+var _cera13 = _interopRequireDefault(require("../../public/images/dishes/cera1464655.jpg"));
 
-var _cera14 = _interopRequireDefault(require("../../public/images/utilitarian/cera0341.jpg"));
+var _cera14 = _interopRequireDefault(require("../../public/images/dishes/cera1656528.jpg"));
 
-var _cera15 = _interopRequireDefault(require("../../public/images/utilitarian/cera1464639.jpg"));
+var _cera15 = _interopRequireDefault(require("../../public/images/dishes/cera1747454.jpg"));
 
-var _cera16 = _interopRequireDefault(require("../../public/images/utilitarian/cera1464646.jpg"));
+var _cera16 = _interopRequireDefault(require("../../public/images/dishes/cera1757521.jpg"));
 
-var _cera17 = _interopRequireDefault(require("../../public/images/utilitarian/cera1464652.jpg"));
+var _cera17 = _interopRequireDefault(require("../../public/images/dishes/cera1838363.jpg"));
 
-var _cera18 = _interopRequireDefault(require("../../public/images/utilitarian/cera1464654.jpg"));
+var _cera18 = _interopRequireDefault(require("../../public/images/dishes/cera1898969.jpg"));
 
-var _cera19 = _interopRequireDefault(require("../../public/images/utilitarian/cera1464655.jpg"));
+var _cera19 = _interopRequireDefault(require("../../public/images/dishes/cera1959590.jpg"));
 
-var _cera20 = _interopRequireDefault(require("../../public/images/utilitarian/cera1656528.jpg"));
-
-var _cera21 = _interopRequireDefault(require("../../public/images/utilitarian/cera1656533.jpg"));
-
-var _cera22 = _interopRequireDefault(require("../../public/images/utilitarian/cera1656536.jpg"));
-
-var _cera23 = _interopRequireDefault(require("../../public/images/utilitarian/cera1747454.jpg"));
-
-var _cera24 = _interopRequireDefault(require("../../public/images/utilitarian/cera1757521.jpg"));
-
-var _cera25 = _interopRequireDefault(require("../../public/images/utilitarian/cera1838363.jpg"));
-
-var _cera26 = _interopRequireDefault(require("../../public/images/utilitarian/cera1898969.jpg"));
-
-var _cera27 = _interopRequireDefault(require("../../public/images/utilitarian/cera1959590.jpg"));
-
-var _cerachat = _interopRequireDefault(require("../../public/images/utilitarian/cerachat0902.jpg"));
+var _cerachat = _interopRequireDefault(require("../../public/images/dishes/cerachat0902.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var images = [// Vases
-{
-  source: _cera8.default
-}, {
-  source: _cera14.default
-}, {
-  source: _cera12.default
-}, {
-  source: _cera21.default
-}, {
-  source: _cera22.default
-}, {
-  source: _cera6.default
-}, {
-  source: _cera7.default
-}, {
-  source: _cera13.default
-}, // Vaisselle
+var images = [// Vaisselle
 {
   source: _cerachat.default
 }, {
-  source: _cera24.default
+  source: _cera16.default
 }, {
-  source: _cera25.default
+  source: _cera17.default
 }, {
-  source: _cera15.default
+  source: _cera9.default
 }, {
   source: _cera4.default
 }, {
@@ -91288,59 +91323,116 @@ var images = [// Vases
   source: _cera2.default
 }, // Plats
 {
-  source: _cera9.default
+  source: _cera6.default
+}, {
+  source: _cera7.default
+}, {
+  source: _cera8.default
 }, {
   source: _cera10.default
 }, {
   source: _cera11.default
 }, {
-  source: _cera16.default
+  source: _cera12.default
 }, {
-  source: _cera17.default
+  source: _cera13.default
+}, {
+  source: _cera14.default
+}, {
+  source: _cera15.default
 }, {
   source: _cera18.default
 }, {
   source: _cera19.default
-}, {
-  source: _cera20.default
-}, {
-  source: _cera23.default
-}, {
-  source: _cera26.default
-}, {
-  source: _cera27.default
 }];
 
-var UtilitarianGalleryPage = function UtilitarianGalleryPage() {
+var DishesGalleryPage = function DishesGalleryPage() {
   return _react.default.createElement(_page.default, null, _react.default.createElement(_gallery.default, {
     images: images
   }));
 };
 
-var _default = UtilitarianGalleryPage;
+var _default = DishesGalleryPage;
 exports.default = _default;
-},{"./gallery":"gallery/gallery.tsx","../components/page":"components/page.tsx","react":"../node_modules/react/index.js","../../public/images/utilitarian/cera0033.jpg":"../public/images/utilitarian/cera0033.jpg","../../public/images/utilitarian/cera0034.jpg":"../public/images/utilitarian/cera0034.jpg","../../public/images/utilitarian/cera0134.jpg":"../public/images/utilitarian/cera0134.jpg","../../public/images/utilitarian/cera0137.jpg":"../public/images/utilitarian/cera0137.jpg","../../public/images/utilitarian/cera0140.jpg":"../public/images/utilitarian/cera0140.jpg","../../public/images/utilitarian/cera0163.jpg":"../public/images/utilitarian/cera0163.jpg","../../public/images/utilitarian/cera0169.jpg":"../public/images/utilitarian/cera0169.jpg","../../public/images/utilitarian/cera0199.jpg":"../public/images/utilitarian/cera0199.jpg","../../public/images/utilitarian/cera0211.jpg":"../public/images/utilitarian/cera0211.jpg","../../public/images/utilitarian/cera0215.jpg":"../public/images/utilitarian/cera0215.jpg","../../public/images/utilitarian/cera0216.jpg":"../public/images/utilitarian/cera0216.jpg","../../public/images/utilitarian/cera0218.jpg":"../public/images/utilitarian/cera0218.jpg","../../public/images/utilitarian/cera0221.jpg":"../public/images/utilitarian/cera0221.jpg","../../public/images/utilitarian/cera0341.jpg":"../public/images/utilitarian/cera0341.jpg","../../public/images/utilitarian/cera1464639.jpg":"../public/images/utilitarian/cera1464639.jpg","../../public/images/utilitarian/cera1464646.jpg":"../public/images/utilitarian/cera1464646.jpg","../../public/images/utilitarian/cera1464652.jpg":"../public/images/utilitarian/cera1464652.jpg","../../public/images/utilitarian/cera1464654.jpg":"../public/images/utilitarian/cera1464654.jpg","../../public/images/utilitarian/cera1464655.jpg":"../public/images/utilitarian/cera1464655.jpg","../../public/images/utilitarian/cera1656528.jpg":"../public/images/utilitarian/cera1656528.jpg","../../public/images/utilitarian/cera1656533.jpg":"../public/images/utilitarian/cera1656533.jpg","../../public/images/utilitarian/cera1656536.jpg":"../public/images/utilitarian/cera1656536.jpg","../../public/images/utilitarian/cera1747454.jpg":"../public/images/utilitarian/cera1747454.jpg","../../public/images/utilitarian/cera1757521.jpg":"../public/images/utilitarian/cera1757521.jpg","../../public/images/utilitarian/cera1838363.jpg":"../public/images/utilitarian/cera1838363.jpg","../../public/images/utilitarian/cera1898969.jpg":"../public/images/utilitarian/cera1898969.jpg","../../public/images/utilitarian/cera1959590.jpg":"../public/images/utilitarian/cera1959590.jpg","../../public/images/utilitarian/cerachat0902.jpg":"../public/images/utilitarian/cerachat0902.jpg"}],"../public/images/house/atelier.jpg":[function(require,module,exports) {
+},{"./gallery":"gallery/gallery.tsx","../components/page":"components/page.tsx","react":"../node_modules/react/index.js","../../public/images/dishes/cera0033.jpg":"../public/images/dishes/cera0033.jpg","../../public/images/dishes/cera0034.jpg":"../public/images/dishes/cera0034.jpg","../../public/images/dishes/cera0134.jpg":"../public/images/dishes/cera0134.jpg","../../public/images/dishes/cera0137.jpg":"../public/images/dishes/cera0137.jpg","../../public/images/dishes/cera0140.jpg":"../public/images/dishes/cera0140.jpg","../../public/images/dishes/cera0211.jpg":"../public/images/dishes/cera0211.jpg","../../public/images/dishes/cera0215.jpg":"../public/images/dishes/cera0215.jpg","../../public/images/dishes/cera0216.jpg":"../public/images/dishes/cera0216.jpg","../../public/images/dishes/cera1464639.jpg":"../public/images/dishes/cera1464639.jpg","../../public/images/dishes/cera1464646.jpg":"../public/images/dishes/cera1464646.jpg","../../public/images/dishes/cera1464652.jpg":"../public/images/dishes/cera1464652.jpg","../../public/images/dishes/cera1464654.jpg":"../public/images/dishes/cera1464654.jpg","../../public/images/dishes/cera1464655.jpg":"../public/images/dishes/cera1464655.jpg","../../public/images/dishes/cera1656528.jpg":"../public/images/dishes/cera1656528.jpg","../../public/images/dishes/cera1747454.jpg":"../public/images/dishes/cera1747454.jpg","../../public/images/dishes/cera1757521.jpg":"../public/images/dishes/cera1757521.jpg","../../public/images/dishes/cera1838363.jpg":"../public/images/dishes/cera1838363.jpg","../../public/images/dishes/cera1898969.jpg":"../public/images/dishes/cera1898969.jpg","../../public/images/dishes/cera1959590.jpg":"../public/images/dishes/cera1959590.jpg","../../public/images/dishes/cerachat0902.jpg":"../public/images/dishes/cerachat0902.jpg"}],"../public/images/vases/cera0163.jpg":[function(require,module,exports) {
+module.exports = "/cera0163.a02a8632.jpg";
+},{}],"../public/images/vases/cera0169.jpg":[function(require,module,exports) {
+module.exports = "/cera0169.89e27311.jpg";
+},{}],"../public/images/vases/cera0199.jpg":[function(require,module,exports) {
+module.exports = "/cera0199.974b4560.jpg";
+},{}],"../public/images/vases/cera0218.jpg":[function(require,module,exports) {
+module.exports = "/cera0218.7c5b96db.jpg";
+},{}],"../public/images/vases/cera0221.jpg":[function(require,module,exports) {
+module.exports = "/cera0221.e1e71bf2.jpg";
+},{}],"../public/images/vases/cera0341.jpg":[function(require,module,exports) {
+module.exports = "/cera0341.bd2dc65e.jpg";
+},{}],"../public/images/vases/cera1656533.jpg":[function(require,module,exports) {
+module.exports = "/cera1656533.69f2b6db.jpg";
+},{}],"../public/images/vases/cera1656536.jpg":[function(require,module,exports) {
+module.exports = "/cera1656536.2647ee69.jpg";
+},{}],"gallery/vases.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _gallery = _interopRequireDefault(require("./gallery"));
+
+var _page = _interopRequireDefault(require("../components/page"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _cera = _interopRequireDefault(require("../../public/images/vases/cera0163.jpg"));
+
+var _cera2 = _interopRequireDefault(require("../../public/images/vases/cera0169.jpg"));
+
+var _cera3 = _interopRequireDefault(require("../../public/images/vases/cera0199.jpg"));
+
+var _cera4 = _interopRequireDefault(require("../../public/images/vases/cera0218.jpg"));
+
+var _cera5 = _interopRequireDefault(require("../../public/images/vases/cera0221.jpg"));
+
+var _cera6 = _interopRequireDefault(require("../../public/images/vases/cera0341.jpg"));
+
+var _cera7 = _interopRequireDefault(require("../../public/images/vases/cera1656533.jpg"));
+
+var _cera8 = _interopRequireDefault(require("../../public/images/vases/cera1656536.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var images = [// Vases
+{
+  source: _cera3.default
+}, {
+  source: _cera6.default
+}, {
+  source: _cera4.default
+}, {
+  source: _cera7.default
+}, {
+  source: _cera8.default
+}, {
+  source: _cera.default
+}, {
+  source: _cera2.default
+}, {
+  source: _cera5.default
+}];
+
+var VasesGalleryPage = function VasesGalleryPage() {
+  return _react.default.createElement(_page.default, null, _react.default.createElement(_gallery.default, {
+    images: images
+  }));
+};
+
+var _default = VasesGalleryPage;
+exports.default = _default;
+},{"./gallery":"gallery/gallery.tsx","../components/page":"components/page.tsx","react":"../node_modules/react/index.js","../../public/images/vases/cera0163.jpg":"../public/images/vases/cera0163.jpg","../../public/images/vases/cera0169.jpg":"../public/images/vases/cera0169.jpg","../../public/images/vases/cera0199.jpg":"../public/images/vases/cera0199.jpg","../../public/images/vases/cera0218.jpg":"../public/images/vases/cera0218.jpg","../../public/images/vases/cera0221.jpg":"../public/images/vases/cera0221.jpg","../../public/images/vases/cera0341.jpg":"../public/images/vases/cera0341.jpg","../../public/images/vases/cera1656533.jpg":"../public/images/vases/cera1656533.jpg","../../public/images/vases/cera1656536.jpg":"../public/images/vases/cera1656536.jpg"}],"../public/images/house/atelier.jpg":[function(require,module,exports) {
 module.exports = "/atelier.6a3bbdd3.jpg";
-},{}],"../public/images/house/cera0235.jpg":[function(require,module,exports) {
-module.exports = "/cera0235.483e2b1e.jpg";
-},{}],"../public/images/house/cera0244.jpg":[function(require,module,exports) {
-module.exports = "/cera0244.3b80e740.jpg";
-},{}],"../public/images/house/cera0245.jpg":[function(require,module,exports) {
-module.exports = "/cera0245.35b88d0b.jpg";
-},{}],"../public/images/house/cera0247.jpg":[function(require,module,exports) {
-module.exports = "/cera0247.575f32e1.jpg";
-},{}],"../public/images/house/cera0250.jpg":[function(require,module,exports) {
-module.exports = "/cera0250.88dcba92.jpg";
-},{}],"../public/images/house/cera0251.jpg":[function(require,module,exports) {
-module.exports = "/cera0251.f6854848.jpg";
-},{}],"../public/images/house/cera0253.jpg":[function(require,module,exports) {
-module.exports = "/cera0253.7b381519.jpg";
 },{}],"../public/images/house/cera0266.jpg":[function(require,module,exports) {
 module.exports = "/cera0266.2be43fc2.jpg";
-},{}],"../public/images/house/cera0305.jpg":[function(require,module,exports) {
-module.exports = "/cera0305.9493bcdc.jpg";
-},{}],"../public/images/house/cera037.jpg":[function(require,module,exports) {
-module.exports = "/cera037.b0475ed8.jpg";
 },{}],"../public/images/house/cera099.jpg":[function(require,module,exports) {
 module.exports = "/cera099.2d9bb097.jpg";
 },{}],"../public/images/house/cera1272723.jpg":[function(require,module,exports) {
@@ -91391,101 +91483,145 @@ var _react = _interopRequireDefault(require("react"));
 
 var _atelier = _interopRequireDefault(require("../../public/images/house/atelier.jpg"));
 
-var _cera = _interopRequireDefault(require("../../public/images/house/cera0235.jpg"));
+var _cera = _interopRequireDefault(require("../../public/images/house/cera0266.jpg"));
 
-var _cera2 = _interopRequireDefault(require("../../public/images/house/cera0244.jpg"));
+var _cera2 = _interopRequireDefault(require("../../public/images/house/cera099.jpg"));
 
-var _cera3 = _interopRequireDefault(require("../../public/images/house/cera0245.jpg"));
+var _cera3 = _interopRequireDefault(require("../../public/images/house/cera1272723.jpg"));
 
-var _cera4 = _interopRequireDefault(require("../../public/images/house/cera0247.jpg"));
+var _cera4 = _interopRequireDefault(require("../../public/images/house/cera1272725.jpg"));
 
-var _cera5 = _interopRequireDefault(require("../../public/images/house/cera0250.jpg"));
+var _cera5 = _interopRequireDefault(require("../../public/images/house/cera1272733.jpg"));
 
-var _cera6 = _interopRequireDefault(require("../../public/images/house/cera0251.jpg"));
+var _cera6 = _interopRequireDefault(require("../../public/images/house/cera1626273.jpg"));
 
-var _cera7 = _interopRequireDefault(require("../../public/images/house/cera0253.jpg"));
+var _cera7 = _interopRequireDefault(require("../../public/images/house/cera1717187.jpg"));
 
-var _cera8 = _interopRequireDefault(require("../../public/images/house/cera0266.jpg"));
+var _cera8 = _interopRequireDefault(require("../../public/images/house/cera1717189.jpg"));
 
-var _cera9 = _interopRequireDefault(require("../../public/images/house/cera0305.jpg"));
+var _cera9 = _interopRequireDefault(require("../../public/images/house/cera1717195.jpg"));
 
-var _cera10 = _interopRequireDefault(require("../../public/images/house/cera037.jpg"));
+var _cera10 = _interopRequireDefault(require("../../public/images/house/cera1727255.jpg"));
 
-var _cera11 = _interopRequireDefault(require("../../public/images/house/cera099.jpg"));
+var _cera11 = _interopRequireDefault(require("../../public/images/house/cera1808008.jpg"));
 
-var _cera12 = _interopRequireDefault(require("../../public/images/house/cera1272723.jpg"));
+var _cera12 = _interopRequireDefault(require("../../public/images/house/cera1848406.jpg"));
 
-var _cera13 = _interopRequireDefault(require("../../public/images/house/cera1272725.jpg"));
+var _cera13 = _interopRequireDefault(require("../../public/images/house/cera1848408.jpg"));
 
-var _cera14 = _interopRequireDefault(require("../../public/images/house/cera1272733.jpg"));
+var _cera14 = _interopRequireDefault(require("../../public/images/house/cera1929204.jpg"));
 
-var _cera15 = _interopRequireDefault(require("../../public/images/house/cera1626273.jpg"));
+var _cera15 = _interopRequireDefault(require("../../public/images/house/cera1939383.jpg"));
 
-var _cera16 = _interopRequireDefault(require("../../public/images/house/cera1717187.jpg"));
+var _cera16 = _interopRequireDefault(require("../../public/images/house/cera1939388.jpg"));
 
-var _cera17 = _interopRequireDefault(require("../../public/images/house/cera1717189.jpg"));
+var _cera17 = _interopRequireDefault(require("../../public/images/house/cera1979782.jpg"));
 
-var _cera18 = _interopRequireDefault(require("../../public/images/house/cera1717195.jpg"));
-
-var _cera19 = _interopRequireDefault(require("../../public/images/house/cera1727255.jpg"));
-
-var _cera20 = _interopRequireDefault(require("../../public/images/house/cera1808008.jpg"));
-
-var _cera21 = _interopRequireDefault(require("../../public/images/house/cera1848406.jpg"));
-
-var _cera22 = _interopRequireDefault(require("../../public/images/house/cera1848408.jpg"));
-
-var _cera23 = _interopRequireDefault(require("../../public/images/house/cera1929204.jpg"));
-
-var _cera24 = _interopRequireDefault(require("../../public/images/house/cera1939383.jpg"));
-
-var _cera25 = _interopRequireDefault(require("../../public/images/house/cera1939388.jpg"));
-
-var _cera26 = _interopRequireDefault(require("../../public/images/house/cera1979782.jpg"));
-
-var _cera27 = _interopRequireDefault(require("../../public/images/house/cera3.jpg"));
+var _cera18 = _interopRequireDefault(require("../../public/images/house/cera3.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var images = [{
-  source: _cera16.default
+  source: _cera7.default
 }, {
-  source: _cera12.default
+  source: _cera3.default
 }, {
-  source: _cera19.default
+  source: _cera10.default
 }, {
-  source: _cera13.default
-}, {
-  source: _cera17.default
-}, {
-  source: _cera14.default
-}, {
-  source: _cera11.default
-}, {
-  source: _cera15.default
-}, {
-  source: _cera18.default
-}, {
-  source: _cera21.default
-}, {
-  source: _cera22.default
-}, {
-  source: _cera20.default
-}, {
-  source: _cera27.default
+  source: _cera4.default
 }, {
   source: _cera8.default
 }, {
+  source: _cera5.default
+}, {
+  source: _cera2.default
+}, {
+  source: _cera6.default
+}, {
+  source: _cera9.default
+}, {
+  source: _cera12.default
+}, {
+  source: _cera13.default
+}, {
+  source: _cera11.default
+}, {
+  source: _cera18.default
+}, {
+  source: _cera.default
+}, {
   source: _atelier.default
 }, {
-  source: _cera23.default
+  source: _cera14.default
 }, {
-  source: _cera24.default
+  source: _cera15.default
 }, {
-  source: _cera25.default
+  source: _cera16.default
 }, {
-  source: _cera26.default
-}, {
+  source: _cera17.default
+}];
+
+var HouseGalleryPage = function HouseGalleryPage() {
+  return _react.default.createElement(_page.default, null, _react.default.createElement(_gallery.default, {
+    images: images
+  }));
+};
+
+var _default = HouseGalleryPage;
+exports.default = _default;
+},{"./gallery":"gallery/gallery.tsx","../components/page":"components/page.tsx","react":"../node_modules/react/index.js","../../public/images/house/atelier.jpg":"../public/images/house/atelier.jpg","../../public/images/house/cera0266.jpg":"../public/images/house/cera0266.jpg","../../public/images/house/cera099.jpg":"../public/images/house/cera099.jpg","../../public/images/house/cera1272723.jpg":"../public/images/house/cera1272723.jpg","../../public/images/house/cera1272725.jpg":"../public/images/house/cera1272725.jpg","../../public/images/house/cera1272733.jpg":"../public/images/house/cera1272733.jpg","../../public/images/house/cera1626273.jpg":"../public/images/house/cera1626273.jpg","../../public/images/house/cera1717187.jpg":"../public/images/house/cera1717187.jpg","../../public/images/house/cera1717189.jpg":"../public/images/house/cera1717189.jpg","../../public/images/house/cera1717195.jpg":"../public/images/house/cera1717195.jpg","../../public/images/house/cera1727255.jpg":"../public/images/house/cera1727255.jpg","../../public/images/house/cera1808008.jpg":"../public/images/house/cera1808008.jpg","../../public/images/house/cera1848406.jpg":"../public/images/house/cera1848406.jpg","../../public/images/house/cera1848408.jpg":"../public/images/house/cera1848408.jpg","../../public/images/house/cera1929204.jpg":"../public/images/house/cera1929204.jpg","../../public/images/house/cera1939383.jpg":"../public/images/house/cera1939383.jpg","../../public/images/house/cera1939388.jpg":"../public/images/house/cera1939388.jpg","../../public/images/house/cera1979782.jpg":"../public/images/house/cera1979782.jpg","../../public/images/house/cera3.jpg":"../public/images/house/cera3.jpg"}],"../public/images/sdb/cera0235.jpg":[function(require,module,exports) {
+module.exports = "/cera0235.a2d740bc.jpg";
+},{}],"../public/images/sdb/cera0244.jpg":[function(require,module,exports) {
+module.exports = "/cera0244.039eed37.jpg";
+},{}],"../public/images/sdb/cera0245.jpg":[function(require,module,exports) {
+module.exports = "/cera0245.68c0ef52.jpg";
+},{}],"../public/images/sdb/cera0247.jpg":[function(require,module,exports) {
+module.exports = "/cera0247.093cd45a.jpg";
+},{}],"../public/images/sdb/cera0250.jpg":[function(require,module,exports) {
+module.exports = "/cera0250.8cfd365d.jpg";
+},{}],"../public/images/sdb/cera0251.jpg":[function(require,module,exports) {
+module.exports = "/cera0251.48525fcc.jpg";
+},{}],"../public/images/sdb/cera0253.jpg":[function(require,module,exports) {
+module.exports = "/cera0253.c07fe9c5.jpg";
+},{}],"../public/images/sdb/cera0305.jpg":[function(require,module,exports) {
+module.exports = "/cera0305.726eab51.jpg";
+},{}],"../public/images/sdb/cera037.jpg":[function(require,module,exports) {
+module.exports = "/cera037.78a298f4.jpg";
+},{}],"gallery/sdb.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _gallery = _interopRequireDefault(require("./gallery"));
+
+var _page = _interopRequireDefault(require("../components/page"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _cera = _interopRequireDefault(require("../../public/images/sdb/cera0235.jpg"));
+
+var _cera2 = _interopRequireDefault(require("../../public/images/sdb/cera0244.jpg"));
+
+var _cera3 = _interopRequireDefault(require("../../public/images/sdb/cera0245.jpg"));
+
+var _cera4 = _interopRequireDefault(require("../../public/images/sdb/cera0247.jpg"));
+
+var _cera5 = _interopRequireDefault(require("../../public/images/sdb/cera0250.jpg"));
+
+var _cera6 = _interopRequireDefault(require("../../public/images/sdb/cera0251.jpg"));
+
+var _cera7 = _interopRequireDefault(require("../../public/images/sdb/cera0253.jpg"));
+
+var _cera8 = _interopRequireDefault(require("../../public/images/sdb/cera0305.jpg"));
+
+var _cera9 = _interopRequireDefault(require("../../public/images/sdb/cera037.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var images = [{
   source: _cera.default
 }, {
   source: _cera2.default
@@ -91500,20 +91636,20 @@ var images = [{
 }, {
   source: _cera7.default
 }, {
-  source: _cera9.default
+  source: _cera8.default
 }, {
-  source: _cera10.default
+  source: _cera9.default
 }];
 
-var HouseGalleryPage = function HouseGalleryPage() {
+var SDBGalleryPage = function SDBGalleryPage() {
   return _react.default.createElement(_page.default, null, _react.default.createElement(_gallery.default, {
     images: images
   }));
 };
 
-var _default = HouseGalleryPage;
+var _default = SDBGalleryPage;
 exports.default = _default;
-},{"./gallery":"gallery/gallery.tsx","../components/page":"components/page.tsx","react":"../node_modules/react/index.js","../../public/images/house/atelier.jpg":"../public/images/house/atelier.jpg","../../public/images/house/cera0235.jpg":"../public/images/house/cera0235.jpg","../../public/images/house/cera0244.jpg":"../public/images/house/cera0244.jpg","../../public/images/house/cera0245.jpg":"../public/images/house/cera0245.jpg","../../public/images/house/cera0247.jpg":"../public/images/house/cera0247.jpg","../../public/images/house/cera0250.jpg":"../public/images/house/cera0250.jpg","../../public/images/house/cera0251.jpg":"../public/images/house/cera0251.jpg","../../public/images/house/cera0253.jpg":"../public/images/house/cera0253.jpg","../../public/images/house/cera0266.jpg":"../public/images/house/cera0266.jpg","../../public/images/house/cera0305.jpg":"../public/images/house/cera0305.jpg","../../public/images/house/cera037.jpg":"../public/images/house/cera037.jpg","../../public/images/house/cera099.jpg":"../public/images/house/cera099.jpg","../../public/images/house/cera1272723.jpg":"../public/images/house/cera1272723.jpg","../../public/images/house/cera1272725.jpg":"../public/images/house/cera1272725.jpg","../../public/images/house/cera1272733.jpg":"../public/images/house/cera1272733.jpg","../../public/images/house/cera1626273.jpg":"../public/images/house/cera1626273.jpg","../../public/images/house/cera1717187.jpg":"../public/images/house/cera1717187.jpg","../../public/images/house/cera1717189.jpg":"../public/images/house/cera1717189.jpg","../../public/images/house/cera1717195.jpg":"../public/images/house/cera1717195.jpg","../../public/images/house/cera1727255.jpg":"../public/images/house/cera1727255.jpg","../../public/images/house/cera1808008.jpg":"../public/images/house/cera1808008.jpg","../../public/images/house/cera1848406.jpg":"../public/images/house/cera1848406.jpg","../../public/images/house/cera1848408.jpg":"../public/images/house/cera1848408.jpg","../../public/images/house/cera1929204.jpg":"../public/images/house/cera1929204.jpg","../../public/images/house/cera1939383.jpg":"../public/images/house/cera1939383.jpg","../../public/images/house/cera1939388.jpg":"../public/images/house/cera1939388.jpg","../../public/images/house/cera1979782.jpg":"../public/images/house/cera1979782.jpg","../../public/images/house/cera3.jpg":"../public/images/house/cera3.jpg"}],"index.tsx":[function(require,module,exports) {
+},{"./gallery":"gallery/gallery.tsx","../components/page":"components/page.tsx","react":"../node_modules/react/index.js","../../public/images/sdb/cera0235.jpg":"../public/images/sdb/cera0235.jpg","../../public/images/sdb/cera0244.jpg":"../public/images/sdb/cera0244.jpg","../../public/images/sdb/cera0245.jpg":"../public/images/sdb/cera0245.jpg","../../public/images/sdb/cera0247.jpg":"../public/images/sdb/cera0247.jpg","../../public/images/sdb/cera0250.jpg":"../public/images/sdb/cera0250.jpg","../../public/images/sdb/cera0251.jpg":"../public/images/sdb/cera0251.jpg","../../public/images/sdb/cera0253.jpg":"../public/images/sdb/cera0253.jpg","../../public/images/sdb/cera0305.jpg":"../public/images/sdb/cera0305.jpg","../../public/images/sdb/cera037.jpg":"../public/images/sdb/cera037.jpg"}],"index.tsx":[function(require,module,exports) {
 "use strict";
 
 var React = _interopRequireWildcard(require("react"));
@@ -91532,13 +91668,19 @@ var _about = _interopRequireDefault(require("./about"));
 
 var _contact = _interopRequireDefault(require("./contact"));
 
+var _galleries = _interopRequireDefault(require("./galleries"));
+
 var _decorative = _interopRequireDefault(require("./gallery/decorative"));
 
 var _collective = _interopRequireDefault(require("./gallery/collective"));
 
-var _utilitarian = _interopRequireDefault(require("./gallery/utilitarian"));
+var _dishes = _interopRequireDefault(require("./gallery/dishes"));
+
+var _vases = _interopRequireDefault(require("./gallery/vases"));
 
 var _house = _interopRequireDefault(require("./gallery/house"));
+
+var _sdb = _interopRequireDefault(require("./gallery/sdb"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -91550,8 +91692,10 @@ function App() {
   return React.createElement(_core.ThemeProvider, {
     theme: _theme.default
   }, React.createElement(_core.CSSReset, null), React.createElement(_reactRouterDom.HashRouter, null, React.createElement(_reactRouterDom.Switch, null, React.createElement(_reactRouterDom.Route, {
-    path: "/about"
+    path: "/bio"
   }, React.createElement(_about.default, null)), React.createElement(_reactRouterDom.Route, {
+    path: "/oeuvres"
+  }, React.createElement(_galleries.default, null)), React.createElement(_reactRouterDom.Route, {
     path: "/contact"
   }, React.createElement(_contact.default, null)), React.createElement(_reactRouterDom.Route, {
     path: "/modelees"
@@ -91559,15 +91703,19 @@ function App() {
     path: "/collectives"
   }, React.createElement(_collective.default, null)), React.createElement(_reactRouterDom.Route, {
     path: "/vaiselle"
-  }, React.createElement(_utilitarian.default, null)), React.createElement(_reactRouterDom.Route, {
+  }, React.createElement(_dishes.default, null)), React.createElement(_reactRouterDom.Route, {
+    path: "/vases"
+  }, React.createElement(_vases.default, null)), React.createElement(_reactRouterDom.Route, {
     path: "/maison"
   }, React.createElement(_house.default, null)), React.createElement(_reactRouterDom.Route, {
+    path: "/sdb"
+  }, React.createElement(_sdb.default, null)), React.createElement(_reactRouterDom.Route, {
     path: "/"
   }, React.createElement(_home.default, null)))));
 }
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./theme":"theme.ts","./home":"home.tsx","./about":"about.tsx","./contact":"contact.tsx","./gallery/decorative":"gallery/decorative.tsx","./gallery/collective":"gallery/collective.tsx","./gallery/utilitarian":"gallery/utilitarian.tsx","./gallery/house":"gallery/house.tsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./theme":"theme.ts","./home":"home.tsx","./about":"about.tsx","./contact":"contact.tsx","./galleries":"galleries.tsx","./gallery/decorative":"gallery/decorative.tsx","./gallery/collective":"gallery/collective.tsx","./gallery/dishes":"gallery/dishes.tsx","./gallery/vases":"gallery/vases.tsx","./gallery/house":"gallery/house.tsx","./gallery/sdb":"gallery/sdb.tsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -91595,7 +91743,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51748" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49960" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

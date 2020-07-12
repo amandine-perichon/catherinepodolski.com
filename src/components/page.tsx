@@ -20,7 +20,8 @@ const Page: React.FC = ({ children }) =>
       <Flex mt={[0, 0, "-40px", "-40px"]} justifyContent={["center", "center", "flex-end", "flex-end"]}>
         <Box>
           <Link to="/">Accueil</Link>
-          <Link to="/about">Biographie</Link>
+          <Link to="/bio">Biographie</Link>
+          <Link to="/oeuvres">Oeuvres</Link>
           <Link to="/contact">Contact</Link>
         </Box>
       </Flex>
