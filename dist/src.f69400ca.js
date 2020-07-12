@@ -66244,14 +66244,19 @@ module.hot.accept(reloadCSS);
 module.exports = {
   "image-links": "_image-links_64682"
 };
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/image-link.module.css":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../public/images/home/vase.jpg":[function(require,module,exports) {
+module.exports = "/vase.b184159d.jpg";
+},{}],"../public/images/home/kitchen.jpg":[function(require,module,exports) {
+module.exports = "/kitchen.61d5b0e7.jpg";
+},{}],"components/image-link.module.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 module.exports = {
   "container": "_container_39852",
-  "overlay": "_overlay_39852"
+  "overlay": "_overlay_39852",
+  "text": "_text_39852"
 };
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/hey-listen/dist/hey-listen.es.js":[function(require,module,exports) {
 "use strict";
@@ -76139,8 +76144,7 @@ var MotionBox = _framerMotion.motion.custom(_core.Box);
 var ImageLink = function ImageLink(_a) {
   var overlayTitle = _a.overlayTitle,
       src = _a.src,
-      to = _a.to;
-  var overlayColor = "#000000a6"; // @ts-ignore
+      to = _a.to; // @ts-ignore
 
   return _react.default.createElement(_reactRouterDom.Link, {
     to: to
@@ -76155,16 +76159,19 @@ var ImageLink = function ImageLink(_a) {
       scale: 1
     }
   }, _react.default.createElement(_core.Box, {
-    className: _imageLinkModule.default.overlay,
-    style: {
-      backgroundColor: overlayColor
-    }
+    className: _imageLinkModule.default.overlay
   }, _react.default.createElement(_core.Text, {
     color: "white",
     textTransform: "uppercase",
     fontSize: "l",
     fontWeight: "600"
-  }, overlayTitle)), _react.default.createElement(_core.Image, {
+  }, overlayTitle)), _react.default.createElement(_core.Text, {
+    className: _imageLinkModule.default.text,
+    color: "white",
+    textTransform: "uppercase",
+    fontSize: "l",
+    fontWeight: "600"
+  }, overlayTitle), _react.default.createElement(_core.Image, {
     src: src
   })));
 };
@@ -76197,6 +76204,10 @@ var _plates = _interopRequireDefault(require("../public/images/home/plates.jpg")
 
 var _collective = _interopRequireDefault(require("../public/images/home/collective.jpg"));
 
+var _vase = _interopRequireDefault(require("../public/images/home/vase.jpg"));
+
+var _kitchen = _interopRequireDefault(require("../public/images/home/kitchen.jpg"));
+
 var _imageLink = _interopRequireDefault(require("./components/image-link"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -76219,7 +76230,7 @@ var GalleriesPage = function GalleriesPage() {
     to: "/vaiselle",
     overlayTitle: "Plats et vaiselle"
   }), _react.default.createElement(_imageLink.default, {
-    src: _plates.default,
+    src: _vase.default,
     to: "/vases",
     overlayTitle: "Vases"
   }), _react.default.createElement(_imageLink.default, {
@@ -76227,7 +76238,7 @@ var GalleriesPage = function GalleriesPage() {
     to: "/maison",
     overlayTitle: "Maison et jardin de Catherine"
   }), _react.default.createElement(_imageLink.default, {
-    src: _house.default,
+    src: _kitchen.default,
     to: "/sdb",
     overlayTitle: "Salles de bain et cuisines"
   })))));
@@ -76235,7 +76246,7 @@ var GalleriesPage = function GalleriesPage() {
 
 var _default = GalleriesPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/page-content":"components/page-content.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./galleries.module.css":"galleries.module.css","../public/images/home/house.jpg":"../public/images/home/house.jpg","../public/images/home/modele.jpg":"../public/images/home/modele.jpg","../public/images/home/plates.jpg":"../public/images/home/plates.jpg","../public/images/home/collective.jpg":"../public/images/home/collective.jpg","./components/image-link":"components/image-link.tsx"}],"../node_modules/glam/lib/sheet.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./components/page":"components/page.tsx","./components/page-content":"components/page-content.tsx","@chakra-ui/core":"../node_modules/@chakra-ui/core/dist/es/index.js","./galleries.module.css":"galleries.module.css","../public/images/home/house.jpg":"../public/images/home/house.jpg","../public/images/home/modele.jpg":"../public/images/home/modele.jpg","../public/images/home/plates.jpg":"../public/images/home/plates.jpg","../public/images/home/collective.jpg":"../public/images/home/collective.jpg","../public/images/home/vase.jpg":"../public/images/home/vase.jpg","../public/images/home/kitchen.jpg":"../public/images/home/kitchen.jpg","./components/image-link":"components/image-link.tsx"}],"../node_modules/glam/lib/sheet.js":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -91473,8 +91484,6 @@ module.exports = "/cera1939383.9a878c05.jpg";
 module.exports = "/cera1939388.3812892a.jpg";
 },{}],"../public/images/house/cera1979782.jpg":[function(require,module,exports) {
 module.exports = "/cera1979782.07f6657d.jpg";
-},{}],"../public/images/house/cera3.jpg":[function(require,module,exports) {
-module.exports = "/cera3.71a873fc.jpg";
 },{}],"gallery/house.tsx":[function(require,module,exports) {
 "use strict";
 
@@ -91525,8 +91534,6 @@ var _cera16 = _interopRequireDefault(require("../../public/images/house/cera1939
 
 var _cera17 = _interopRequireDefault(require("../../public/images/house/cera1979782.jpg"));
 
-var _cera18 = _interopRequireDefault(require("../../public/images/house/cera3.jpg"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var images = [{
@@ -91554,8 +91561,6 @@ var images = [{
 }, {
   source: _cera11.default
 }, {
-  source: _cera18.default
-}, {
   source: _cera.default
 }, {
   source: _atelier.default
@@ -91577,7 +91582,7 @@ var HouseGalleryPage = function HouseGalleryPage() {
 
 var _default = HouseGalleryPage;
 exports.default = _default;
-},{"./gallery":"gallery/gallery.tsx","../components/page":"components/page.tsx","react":"../node_modules/react/index.js","../../public/images/house/atelier.jpg":"../public/images/house/atelier.jpg","../../public/images/house/cera0266.jpg":"../public/images/house/cera0266.jpg","../../public/images/house/cera099.jpg":"../public/images/house/cera099.jpg","../../public/images/house/cera1272723.jpg":"../public/images/house/cera1272723.jpg","../../public/images/house/cera1272725.jpg":"../public/images/house/cera1272725.jpg","../../public/images/house/cera1272733.jpg":"../public/images/house/cera1272733.jpg","../../public/images/house/cera1626273.jpg":"../public/images/house/cera1626273.jpg","../../public/images/house/cera1717187.jpg":"../public/images/house/cera1717187.jpg","../../public/images/house/cera1717189.jpg":"../public/images/house/cera1717189.jpg","../../public/images/house/cera1717195.jpg":"../public/images/house/cera1717195.jpg","../../public/images/house/cera1727255.jpg":"../public/images/house/cera1727255.jpg","../../public/images/house/cera1808008.jpg":"../public/images/house/cera1808008.jpg","../../public/images/house/cera1848406.jpg":"../public/images/house/cera1848406.jpg","../../public/images/house/cera1848408.jpg":"../public/images/house/cera1848408.jpg","../../public/images/house/cera1929204.jpg":"../public/images/house/cera1929204.jpg","../../public/images/house/cera1939383.jpg":"../public/images/house/cera1939383.jpg","../../public/images/house/cera1939388.jpg":"../public/images/house/cera1939388.jpg","../../public/images/house/cera1979782.jpg":"../public/images/house/cera1979782.jpg","../../public/images/house/cera3.jpg":"../public/images/house/cera3.jpg"}],"../public/images/sdb/cera0235.jpg":[function(require,module,exports) {
+},{"./gallery":"gallery/gallery.tsx","../components/page":"components/page.tsx","react":"../node_modules/react/index.js","../../public/images/house/atelier.jpg":"../public/images/house/atelier.jpg","../../public/images/house/cera0266.jpg":"../public/images/house/cera0266.jpg","../../public/images/house/cera099.jpg":"../public/images/house/cera099.jpg","../../public/images/house/cera1272723.jpg":"../public/images/house/cera1272723.jpg","../../public/images/house/cera1272725.jpg":"../public/images/house/cera1272725.jpg","../../public/images/house/cera1272733.jpg":"../public/images/house/cera1272733.jpg","../../public/images/house/cera1626273.jpg":"../public/images/house/cera1626273.jpg","../../public/images/house/cera1717187.jpg":"../public/images/house/cera1717187.jpg","../../public/images/house/cera1717189.jpg":"../public/images/house/cera1717189.jpg","../../public/images/house/cera1717195.jpg":"../public/images/house/cera1717195.jpg","../../public/images/house/cera1727255.jpg":"../public/images/house/cera1727255.jpg","../../public/images/house/cera1808008.jpg":"../public/images/house/cera1808008.jpg","../../public/images/house/cera1848406.jpg":"../public/images/house/cera1848406.jpg","../../public/images/house/cera1848408.jpg":"../public/images/house/cera1848408.jpg","../../public/images/house/cera1929204.jpg":"../public/images/house/cera1929204.jpg","../../public/images/house/cera1939383.jpg":"../public/images/house/cera1939383.jpg","../../public/images/house/cera1939388.jpg":"../public/images/house/cera1939388.jpg","../../public/images/house/cera1979782.jpg":"../public/images/house/cera1979782.jpg"}],"../public/images/sdb/cera0235.jpg":[function(require,module,exports) {
 module.exports = "/cera0235.a2d740bc.jpg";
 },{}],"../public/images/sdb/cera0244.jpg":[function(require,module,exports) {
 module.exports = "/cera0244.039eed37.jpg";
@@ -91595,6 +91600,8 @@ module.exports = "/cera0253.c07fe9c5.jpg";
 module.exports = "/cera0305.726eab51.jpg";
 },{}],"../public/images/sdb/cera037.jpg":[function(require,module,exports) {
 module.exports = "/cera037.78a298f4.jpg";
+},{}],"../public/images/sdb/cera3.jpg":[function(require,module,exports) {
+module.exports = "/cera3.cf960b55.jpg";
 },{}],"gallery/sdb.tsx":[function(require,module,exports) {
 "use strict";
 
@@ -91627,9 +91634,13 @@ var _cera8 = _interopRequireDefault(require("../../public/images/sdb/cera0305.jp
 
 var _cera9 = _interopRequireDefault(require("../../public/images/sdb/cera037.jpg"));
 
+var _cera10 = _interopRequireDefault(require("../../public/images/sdb/cera3.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var images = [{
+  source: _cera10.default
+}, {
   source: _cera.default
 }, {
   source: _cera2.default
@@ -91657,7 +91668,7 @@ var SDBGalleryPage = function SDBGalleryPage() {
 
 var _default = SDBGalleryPage;
 exports.default = _default;
-},{"./gallery":"gallery/gallery.tsx","../components/page":"components/page.tsx","react":"../node_modules/react/index.js","../../public/images/sdb/cera0235.jpg":"../public/images/sdb/cera0235.jpg","../../public/images/sdb/cera0244.jpg":"../public/images/sdb/cera0244.jpg","../../public/images/sdb/cera0245.jpg":"../public/images/sdb/cera0245.jpg","../../public/images/sdb/cera0247.jpg":"../public/images/sdb/cera0247.jpg","../../public/images/sdb/cera0250.jpg":"../public/images/sdb/cera0250.jpg","../../public/images/sdb/cera0251.jpg":"../public/images/sdb/cera0251.jpg","../../public/images/sdb/cera0253.jpg":"../public/images/sdb/cera0253.jpg","../../public/images/sdb/cera0305.jpg":"../public/images/sdb/cera0305.jpg","../../public/images/sdb/cera037.jpg":"../public/images/sdb/cera037.jpg"}],"index.tsx":[function(require,module,exports) {
+},{"./gallery":"gallery/gallery.tsx","../components/page":"components/page.tsx","react":"../node_modules/react/index.js","../../public/images/sdb/cera0235.jpg":"../public/images/sdb/cera0235.jpg","../../public/images/sdb/cera0244.jpg":"../public/images/sdb/cera0244.jpg","../../public/images/sdb/cera0245.jpg":"../public/images/sdb/cera0245.jpg","../../public/images/sdb/cera0247.jpg":"../public/images/sdb/cera0247.jpg","../../public/images/sdb/cera0250.jpg":"../public/images/sdb/cera0250.jpg","../../public/images/sdb/cera0251.jpg":"../public/images/sdb/cera0251.jpg","../../public/images/sdb/cera0253.jpg":"../public/images/sdb/cera0253.jpg","../../public/images/sdb/cera0305.jpg":"../public/images/sdb/cera0305.jpg","../../public/images/sdb/cera037.jpg":"../public/images/sdb/cera037.jpg","../../public/images/sdb/cera3.jpg":"../public/images/sdb/cera3.jpg"}],"index.tsx":[function(require,module,exports) {
 "use strict";
 
 var React = _interopRequireWildcard(require("react"));
@@ -91751,7 +91762,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56876" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58828" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

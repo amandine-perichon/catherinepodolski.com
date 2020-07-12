@@ -7,6 +7,8 @@ import house from '../public/images/home/house.jpg'
 import modele from '../public/images/home/modele.jpg'
 import plates from '../public/images/home/plates.jpg'
 import collective from '../public/images/home/collective.jpg'
+import vase from '../public/images/home/vase.jpg'
+import kitchen from '../public/images/home/kitchen.jpg'
 import ImageLink from './components/image-link'
 
 const GalleriesPage: React.FC = () => <Page>
@@ -20,9 +22,9 @@ const GalleriesPage: React.FC = () => <Page>
         />
         <ImageLink src={collective} to="/collectives" overlayTitle="Oeuvres collectives" />
         <ImageLink src={plates} to="/vaiselle" overlayTitle="Plats et vaiselle" />
-        <ImageLink src={plates} to="/vases" overlayTitle="Vases" />
+        <ImageLink src={vase} to="/vases" overlayTitle="Vases" />
         <ImageLink src={house} to="/maison" overlayTitle="Maison et jardin de Catherine" />
-        <ImageLink src={house} to="/sdb" overlayTitle="Salles de bain et cuisines" />
+        <ImageLink src={kitchen} to="/sdb" overlayTitle="Salles de bain et cuisines" />
       </Box>
     </Stack>
   </PageContent>

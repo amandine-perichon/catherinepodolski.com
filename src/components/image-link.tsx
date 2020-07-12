@@ -13,8 +13,6 @@ interface ImageLinkProps {
 }
 
 const ImageLink: React.FC<ImageLinkProps> = ({ overlayTitle, src, to }) => {
-  const overlayColor = "#000000a6"
-
   // @ts-ignore
   return < RouterLink to={to} >
     <MotionBox width={[
@@ -27,9 +25,16 @@ const ImageLink: React.FC<ImageLinkProps> = ({ overlayTitle, src, to }) => {
       whileHover={{ scale: 1.025, zIndex: 1 }}
       whileTap={{ scale: 1 }}
     >
-      <Box className={styles.overlay} style={{ backgroundColor: overlayColor }}>
-        <Text color="white" textTransform="uppercase" fontSize="l" fontWeight="600">{overlayTitle}</Text>
+      <Box className={styles.overlay} >
+        <Text color="white" textTransform="uppercase" fontSize="l" fontWeight="600">
+          {overlayTitle}
+        </Text>
       </Box>
+
+      <Text className={styles.text} color="white" textTransform="uppercase" fontSize="l" fontWeight="600">
+        {overlayTitle}
+      </Text>
+
       <Image src={src} />
     </MotionBox>
   </RouterLink >

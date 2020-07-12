@@ -20,7 +20,6 @@ import cera1929204 from '../../public/images/house/cera1929204.jpg'
 import cera1939383 from '../../public/images/house/cera1939383.jpg'
 import cera1939388 from '../../public/images/house/cera1939388.jpg'
 import cera1979782 from '../../public/images/house/cera1979782.jpg'
-import cera3 from '../../public/images/house/cera3.jpg'
 
 const images = [
   { source: cera1717187 },
@@ -35,7 +34,6 @@ const images = [
   { source: cera1848406 },
   { source: cera1848408 },
   { source: cera1808008 },
-  { source: cera3 },
   { source: cera0266 },
   { source: atelier },
   { source: cera1929204 },
