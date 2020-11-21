@@ -1,20 +1,12 @@
 ._navbar_1493d {
-  position: fixed;
-  height: 80px;
-  top: 0;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   background-color: white;
   z-index: 999;
 }
 
 ._link_1493d {
   text-decoration: none !important;
-}
-
-._content_1493d {
-  position: relative;
-  top: 80px;
 }
 
 ._page-content_1493d {

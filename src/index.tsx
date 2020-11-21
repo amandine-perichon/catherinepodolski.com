@@ -7,6 +7,7 @@ import customTheme from './theme'
 import HomePage from './home'
 import AboutPage from './about'
 import ContactPage from './contact'
+import CadransPage from './cadrans'
 import GalleriesPage from './galleries'
 
 import DecorativeGalleryPage from './gallery/decorative'
@@ -24,6 +25,7 @@ function App() {
         <Switch>
           <Route path="/bio"><AboutPage /></Route>
           <Route path="/oeuvres"><GalleriesPage /></Route>
+          <Route path="/cadrans"><CadransPage /></Route>
           <Route path="/contact"><ContactPage /></Route>
 
           {/* Image Galleries */}
