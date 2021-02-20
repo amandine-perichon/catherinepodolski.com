@@ -12,7 +12,7 @@ const CadransPage: React.FC = () => <Page>
       <Heading size="md">Cadrans Solaires</Heading>
 
       <Stack spacing={3}>
-        <Text as="p">Catherine réalise des cadrans solaires, avec l&apos;aide de son mari Étienne. Ils peuvent être admirés sur leur maison à Bruxelles, ainsi qu&apos;à Perinaldo.</Text>
+        <Text as="p">Catherine a réalisé plusieurs cadrans solaires qui peuvent être admirés sur sa maison à Bruxelles, ainsi qu&apos;à Perinaldo.</Text>
 
         <Image padding="10px" m={["30px 20px", "30px 20px", "0px 0px 10px 30px", "0px 0px 10px 30px"]} src={cadran} />
 
