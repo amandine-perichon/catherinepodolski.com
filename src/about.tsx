@@ -20,7 +20,7 @@ const AboutPage: React.FC = () => <Page>
 
             <Text marginLeft={10} as="p" fontStyle="italic">&quot;Mon père m&apos;a donné la passion du jardinage, ma mère celle de la céramique. À l&apos;âge où l&apos;on donne un crayon aux enfants, j&apos;ai reçu en prime une boule de terre !&quot;</Text>
           </Stack>
-          <Image m={["30px 20px", "30px 20px", "0px 0px 10px 30px", "0px 0px 10px 30px"]} width={250} height={336} src={catherine} />
+          <Image m={["30px 20px", "30px 20px", "0px 0px 10px 30px", "0px 0px 10px 30px"]} width={250} height={336} src={catherine} alt="Catherine Podolski" />
         </Flex>
 
 

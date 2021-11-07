@@ -4,9 +4,12 @@ import { Image, Text } from '@chakra-ui/core'
 import styles from './gallery.module.css'
 
 const View: React.FC<CommonProps & { data: { source: string, caption: string } }> = ({ data }) => {
+  const altSuffix = data.caption ? ` - ${data.caption}` : ''
+  const alt = `Oeuvre de Catherine Podolski${altSuffix}`
+
   return (
     <div className={styles.view}>
-      <Image m="auto" objectFit="contain" height="100%" src={data.source} />
+      <Image m="auto" objectFit="contain" height="100%" src={data.source} alt={alt} />
       {data.caption &&
         <div className={styles["caption-container"]}>
           <Text className={styles.caption}>{data.caption}</Text>

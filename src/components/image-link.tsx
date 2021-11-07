@@ -35,7 +35,7 @@ const ImageLink: React.FC<ImageLinkProps> = ({ overlayTitle, src, to }) => {
         {overlayTitle}
       </Text>
 
-      <Image src={src} />
+      <Image src={src} alt={`${overlayTitle} - Catherine Podolski`} />
     </MotionBox>
   </RouterLink >
 }

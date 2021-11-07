@@ -14,9 +14,9 @@ const CadransPage: React.FC = () => <Page>
       <Stack spacing={3}>
         <Text as="p">Catherine a réalisé plusieurs cadrans solaires qui peuvent être admirés sur sa maison à Bruxelles, ainsi qu&apos;à Perinaldo.</Text>
 
-        <Image padding="10px" m={["30px 20px", "30px 20px", "0px 0px 10px 30px", "0px 0px 10px 30px"]} src={cadran} />
+        <Image padding="10px" m={["30px 20px", "30px 20px", "0px 0px 10px 30px", "0px 0px 10px 30px"]} src={cadran} alt="Cadran Solaire - Catherine Podolski" />
 
-        <Image padding="10px" m={["30px 20px", "30px 20px", "0px 0px 10px 30px", "0px 0px 10px 30px"]} src={cadran2} />
+        <Image padding="10px" m={["30px 20px", "30px 20px", "0px 0px 10px 30px", "0px 0px 10px 30px"]} src={cadran2} alt="Cadran Solaire - Catherine Podolski" />
 
 
         <Text as="h2">Ses cadrans sont mentionés sur plusieurs sites de recensement de cadrans solaires:</Text>
